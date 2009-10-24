@@ -5,7 +5,7 @@
     with:
         tasks full
 
-    build_root_dir "."
+    build_root_dir "build"
     shared_library "Lib"
 
 package.category = "Mocks"
