@@ -9,8 +9,8 @@
     shared_library "Lib"
 
 package.category = "Mocks"
-package.description = "The simplest mocking library for .NET 3.5 and Silverlight with deep C# 3.0 integration."
-package.forum = "http://groups.google.com/group/moqdisc"
-package.homepage = "http://code.google.com/p/moq/"
-package.name = "Moq"
+package.description = "Dynamic Mocking Framework for .NET."
+package.forum = "http://groups.google.co.uk/group/rhino-tools-dev?hl=en"
+package.homepage = "http://ayende.com/blog/"
+package.name = "Rhino.Mocks"
 package.notes = ""
