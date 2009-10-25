@@ -2,11 +2,12 @@
     get_from git("git://github.com/ayende/rhino-mocks.git")
     build_with psake, buildfile("psake.ps1"), FrameworkVersion35
 
-    with:
-        tasks full
-
     build_root_dir "build"
     shared_library "Lib"
+    
+dependencies:
+    depend "castle.tools" >> "Castle.Core"
+    depend "castle.tools" >> "Castle.DynamicProxy2"    
 
 package.category = "Mocks"
 package.description = "Dynamic Mocking Framework for .NET."
