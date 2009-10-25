@@ -7,7 +7,7 @@
     
 dependencies:
     depend "castle.tools" >> "Castle.Core"
-    depend "castle.tools" >> "Castle.DynamicProxy2"    
+    depend "castle.tools" >> "Castle.DynamicProxy2"  
 
 package.category = "Mocks"
 package.description = "Dynamic Mocking Framework for .NET."
