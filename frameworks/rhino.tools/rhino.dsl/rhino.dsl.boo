@@ -3,7 +3,7 @@
     build_with psake, buildfile("psake.ps1"), FrameworkVersion35
 
     build_root_dir "build"
-    shared_library "Lib"
+    shared_library "SharedLibs"
 
 package.category = "Mocks"
 package.description = "DSL Library for Boo"
