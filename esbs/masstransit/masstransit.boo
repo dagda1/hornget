@@ -2,7 +2,7 @@
     get_from svn("http://masstransit.googlecode.com/svn/trunk/")
     build_with nant, buildfile("BuildScripts/masstransit.build"), FrameworkVersion35	
 
-    shared_library "libs"
+    shared_library "lib"
     build_root_dir "bin"
 
 dependencies:
