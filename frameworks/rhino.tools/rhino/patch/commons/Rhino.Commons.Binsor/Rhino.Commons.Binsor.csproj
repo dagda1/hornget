@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCB0BEBF-146A-4C42-B22A-1EB338E4EA8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rhino.Commons.Binsor</RootNamespace>
+    <AssemblyName>Rhino.Commons.Binsor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\ayende-open-source.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DOTNET35</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Boo.Lang, Version=2.0.0.0, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Boo\Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Compiler, Version=2.0.9.1, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Boo\Boo.Lang.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Extensions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Boo\Boo.Lang.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Parser, Version=2.0.0.0, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Boo\Boo.Lang.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Castle\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Castle\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Castle\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.DSL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharedLibs\Rhino.DSL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinsorCompilerStep.cs" />
+    <Compile Include="BinsorGlobalMethods.cs" />
+    <Compile Include="BooComponentInstaller.cs" />
+    <Compile Include="BooReader.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="ComponentReference.cs" />
+    <Compile Include="Configuration\AttributeBuilder.cs" />
+    <Compile Include="Configuration\ChildBuilder.cs" />
+    <Compile Include="Configuration\ConfigurationHelper.cs" />
+    <Compile Include="Configuration\IConfigurationBuilder.cs" />
+    <Compile Include="Configuration\IConfigurationFormatter.cs" />
+    <Compile Include="Configuration\KeyMapBuilder.cs" />
+    <Compile Include="Configuration\KeyValuesBuilder.cs" />
+    <Compile Include="Configuration\ListBuilder.cs" />
+    <Compile Include="ContainerAdapter.cs" />
+    <Compile Include="Extend.cs" />
+    <Compile Include="Extensions\AbstractComponentExtension.cs" />
+    <Compile Include="Extensions\ConfigurationExtension.cs" />
+    <Compile Include="Extensions\InterceptorExtension.cs" />
+    <Compile Include="Extensions\EventWireExtension.cs" />
+    <Compile Include="Extensions\FactorySupportExtension.cs" />
+    <Compile Include="Extensions\LifestyleExtension.cs" />
+    <Compile Include="Extensions\ParametersExtension.cs" />
+    <Compile Include="Extensions\StartableExtension.cs" />
+    <Compile Include="Facility.cs" />
+    <Compile Include="IComponentExtension.cs" />
+    <Compile Include="AbstractConfigurationRunner.cs" />
+    <Compile Include="INeedSecondPassRegistration.cs" />
+    <Compile Include="Installer\BinsorFileInstaller.cs" />
+    <Compile Include="Installer\BinsorResourceInstaller.cs" />
+    <Compile Include="Installer\BinsorRunnerInstaller.cs" />
+    <Compile Include="Installer\BinsorScript.cs" />
+    <Compile Include="Installer\BinsorScriptInstaller.cs" />
+    <Compile Include="Installer\BinsorStreamInstaller.cs" />
+    <Compile Include="Macros\AbstractBinsorMacro.cs" />
+    <Compile Include="Macros\BaseBinsorExtensionMacro.cs" />
+    <Compile Include="Macros\BaseBinsorToplevelMacro.cs" />
+    <Compile Include="Macros\BaseConfigurationMacro.cs" />
+    <Compile Include="Macros\ComponentMacro.cs" />
+    <Compile Include="Macros\ComponentMethodVisitor.cs" />
+    <Compile Include="Macros\ConfigurationMacro.cs" />
+    <Compile Include="Macros\ConfigurationNodeVisitor.cs" />
+    <Compile Include="Macros\InterceptorMacro.cs" />
+    <Compile Include="Macros\CreateUsingMacro.cs" />
+    <Compile Include="Macros\ExtendMacro.cs" />
+    <Compile Include="Macros\FacilityMacro.cs" />
+    <Compile Include="Macros\HashConfigurationBuilder.cs" />
+    <Compile Include="Macros\LifestyleMacro.cs" />
+    <Compile Include="Macros\MacroHelper.cs" />
+    <Compile Include="Macros\ParametersMacro.cs" />
+    <Compile Include="Macros\StartMacro.cs" />
+    <Compile Include="Macros\WireEventMacro.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterComponentAndFacilitiesAfterCreation.cs" />
+    <Compile Include="TransformUnknownReferences.cs" />
+    <Compile Include="TypeEnumerable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rhino.Commons.Clr\Rhino.Commons.Clr-vs2008.csproj">
+      <Project>{77693BCD-4C8A-4523-AEE7-8AB46C1034E7}</Project>
+      <Name>Rhino.Commons.Clr-vs2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ayende-open-source.snk">
+      <Link>ayende-open-source.snk</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
