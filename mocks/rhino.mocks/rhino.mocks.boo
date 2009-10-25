@@ -3,7 +3,7 @@
     build_with psake, buildfile("psake.ps1"), FrameworkVersion35
 
     build_root_dir "build"
-    shared_library "Lib"
+    shared_library "SharedLibs"
     
 dependencies:
     depend "castle.tools" >> "Castle.Core"
