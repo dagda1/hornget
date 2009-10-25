@@ -7,6 +7,14 @@
 
 dependencies:
     depend "rhino.dsl" >> "rhino.dsl"
+    depend "rhino.dsl" >> "Boo.Lang.CodeDom"
+    depend "rhino.dsl" >> "Boo.Lang.Compiler"
+    depend "rhino.dsl" >> "Boo.Lang.dll"
+    depend "rhino.dsl" >> "Boo.Lang.Extensions"
+    depend "rhino.dsl" >> "Boo.Lang.Interpreter"
+    depend "rhino.dsl" >> "Boo.Lang.Parser"
+    depend "rhino.dsl" >> "Boo.Lang.PatternMatching"
+    depend "rhino.dsl" >> "Boo.Lang.Useful"
 
 package.category = "Frameworks"
 package.description = "Developer friendly ETL Library for .NET"
