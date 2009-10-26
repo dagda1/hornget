@@ -14,7 +14,8 @@ install castle.services:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.tools" >> "castle.core"    depend "rhino.dsl"   >> "Boo.Lang"
+    dependency "castle.tools" >> "castle.core"    
+    depend "rhino.dsl"   >> "Boo.Lang"
     depend "rhino.dsl"   >> "Boo.Lang.CodeDom"
     depend "rhino.dsl"   >> "Boo.Lang.Compiler"
     depend "rhino.dsl"   >> "Boo.Lang.dll"
