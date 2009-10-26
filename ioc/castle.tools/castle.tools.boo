@@ -13,6 +13,17 @@ install castle.tools:
     shared_library "SharedLibs"
     build_root_dir "build"
 
+dependencies:
+    depend "rhino.dsl"   >> "Boo.Lang"
+    depend "rhino.dsl"   >> "Boo.Lang.CodeDom"
+    depend "rhino.dsl"   >> "Boo.Lang.Compiler"
+    depend "rhino.dsl"   >> "Boo.Lang.dll"
+    depend "rhino.dsl"   >> "Boo.Lang.Extensions"
+    depend "rhino.dsl"   >> "Boo.Lang.Interpreter"
+    depend "rhino.dsl"   >> "Boo.Lang.Parser"
+    depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
+    depend "rhino.dsl"   >> "Boo.Lang.Useful"
+
 package.category = "IoC"
 package.description = "Dynamic Proxy Generator for the CLR."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

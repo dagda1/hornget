@@ -16,6 +16,15 @@ install castle.windsor:
 dependencies:
     dependency "castle.tools" >> "castle.core"
     dependency "castle.tools" >> "Castle.DynamicProxy2"
+    depend "rhino.dsl"   >> "Boo.Lang"
+    depend "rhino.dsl"   >> "Boo.Lang.CodeDom"
+    depend "rhino.dsl"   >> "Boo.Lang.Compiler"
+    depend "rhino.dsl"   >> "Boo.Lang.dll"
+    depend "rhino.dsl"   >> "Boo.Lang.Extensions"
+    depend "rhino.dsl"   >> "Boo.Lang.Interpreter"
+    depend "rhino.dsl"   >> "Boo.Lang.Parser"
+    depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
+    depend "rhino.dsl"   >> "Boo.Lang.Useful"
 
 package.category = "IoC"
 package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."
