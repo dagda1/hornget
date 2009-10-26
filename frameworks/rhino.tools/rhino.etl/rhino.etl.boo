@@ -7,7 +7,7 @@
 
 dependencies:
     depend "rhino.dsl"   >> "rhino.dsl"
-	depend "rhino.dsl"   >> "Boo.Lang"
+    depend "rhino.dsl"   >> "Boo.Lang"
     depend "rhino.dsl"   >> "Boo.Lang.CodeDom"
     depend "rhino.dsl"   >> "Boo.Lang.Compiler"
     depend "rhino.dsl"   >> "Boo.Lang.dll"
