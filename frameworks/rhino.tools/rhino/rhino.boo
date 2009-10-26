@@ -33,7 +33,6 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.Parser"
     depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
     depend "rhino.dsl"   >> "Boo.Lang.Useful"
-    depend "rhino.mocks" >> "rhino.mocks"
 
 package.category = "Frameworks"
 package.description = "Rhino tools including Rhino Mocks, Rhino ETL, Binsor etc."
