@@ -112,6 +112,8 @@
 				<include name="*.dll" />
 				<exclude name="log4net.*" />
 			</fileset>
+      <copy file="${lib.dir}/Rhino.DSL.dll" todir="${build.dir}/Rhino.DSL.dll" />
+      <copy file="${lib.dir}/Rhino.DSL.pdb" todir="${build.dir}/Rhino.DSL.pdb" />
 		</copy>
 		
 		<foreach item="String" delim=" " property="dependency.dir" 
