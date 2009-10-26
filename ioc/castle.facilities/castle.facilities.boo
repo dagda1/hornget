@@ -15,12 +15,12 @@ install castle.facilities:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.windsor"               >> "Castle.Core"
-    depend "castle.windsor"               >> "Castle.DynamicProxy2"
-    depend "castle.windsor"               >> "Castle.MicroKernel"
-    depend "castle.windsor"               >> "Castle.Windsor"
-    depend "castle.activerecord"          >> "Castle.ActiveRecord"
-    depend "castle.services"              >> "Castle.Services.Transaction"
+    dependency "castle.windsor"               >> "Castle.Core"
+    dependency "castle.windsor"               >> "Castle.DynamicProxy2"
+    dependency "castle.windsor"               >> "Castle.MicroKernel"
+    dependency "castle.windsor"               >> "Castle.Windsor"
+    dependency "castle.activerecord"          >> "Castle.ActiveRecord"
+    dependency "castle.services"              >> "Castle.Services.Transaction"
     depend "castle.services"              >> "Castle.Services.Logging.Log4netIntegration"
     depend "castle.services"              >> "Castle.Services.Logging.NLogIntegration"
     depend "nhibernate"          >> "2.1" >> "NHibernate"    
