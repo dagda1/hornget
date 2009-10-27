@@ -114,8 +114,8 @@
 			</fileset>
 		</copy>
 
-    <copy file="${lib.dir}/Rhino.DSL.dll" todir="${build.dir}/Rhino.DSL.dll" />
-    <copy file="${lib.dir}/Rhino.DSL.pdb" todir="${build.dir}/Rhino.DSL.pdb" />
+    <copy file="${lib.dir}/Rhino.DSL.dll" tofile="${build.dir}/Rhino.DSL.dll" />
+    <copy file="${lib.dir}/Rhino.DSL.pdb" tofile="${build.dir}/Rhino.DSL.pdb" />
     
 		<foreach item="String" delim=" " property="dependency.dir" 
 			in="Boo Castle FileHelpers ICSharpCode Interop NHibernate SqlCE SqLite.Net System VisualStudio Esent xunit Wintellect">
