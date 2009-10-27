@@ -1,6 +1,6 @@
 ﻿install masstransit:
     get_from svn("http://masstransit.googlecode.com/svn/trunk/")
-    build_with nant, buildfile("BuildScripts/masstransit.build"), FrameworkVersion35	
+    build_with batch, buildfile("build.bat"), FrameworkVersion35	
 
     shared_library "lib"
     build_root_dir "bin"
