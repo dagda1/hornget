@@ -25,6 +25,7 @@ dependencies:
     depend "nhibernate"          >> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"          >> "2.1" >> "Iesi.Collections"
     depend "rhino.dsl"   >> "Rhino.Dsl"
+    depend "rhino.dsl"   >> "Boo.Lang"
     depend "rhino.dsl"   >> "Boo.Lang.CodeDom"
     depend "rhino.dsl"   >> "Boo.Lang.Compiler"
     depend "rhino.dsl"   >> "Boo.Lang.dll"
