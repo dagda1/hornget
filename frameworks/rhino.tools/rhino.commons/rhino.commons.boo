@@ -1,12 +1,9 @@
-install rhino:
-    get_from svn("https://rhino-tools.svn.sourceforge.net/svnroot/rhino-tools/trunk")
-    build_with nant, buildfile("default.build"), FrameworkVersion35
+﻿install rhino.dsl:
+    get_from git("git://github.com/lorenzomelato/rhino-commons.git")
+    build_with psake, buildfile("psake.ps1"), FrameworkVersion35
 
-    switches:
-        parameters "build.warnaserrors=false","common.testrunner.enabled=false","sign=true"
-
-    shared_library "SharedLibs"
     build_root_dir "build"
+    shared_library "SharedLibs"
 
 dependencies:
     depend "castle.tools"                 >> "Castle.Core"
@@ -36,8 +33,8 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.Useful"
 
 package.category = "Frameworks"
-package.description = "Rhino tools including Rhino Mocks, Rhino ETL, Binsor etc."
-package.homepage = "http://ayende.com/projects/rhino-mocks.aspx"
-package.forum = "http://groups.google.co.uk/group/rhino-tools-dev"
-package.name = "Rhino Tools"
+package.description = "Support and extension for many advance usecases"
+package.forum = "http://groups.google.co.uk/group/rhino-tools-dev?hl=en"
+package.homepage = "http://github.com/lorenzomelato/rhino-commons"
+package.name = "Rhino.Dsl"
 package.notes = ""
