@@ -190,7 +190,6 @@
 			Disable CLSCompliantAttribute for non-instrumented assemblies during Clover
 			build. The attribute causes build problems.
 		-->
-		<property name="assembly.is-cls-compliant" value="false" if="${clover.enabled and not clover.instrument}" />
 	</target>
 
 	<target name="common.generate-assemblyinfo"
