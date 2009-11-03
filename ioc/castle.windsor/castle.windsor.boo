@@ -30,6 +30,8 @@ exclude:
 	library "Iesi.Collections"
 	library "NHibernate.ByteCode.Castle"
 	library "NHibernate"
+	library "NHibernate.Search"
+	library "Nhibernate.Linq"
 
 package.category = "IoC"
 package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."

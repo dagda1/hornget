@@ -15,6 +15,8 @@ exclude:
 	library "Iesi.Collections"
 	library "NHibernate.ByteCode.Castle"
 	library "NHibernate"
+	library "NHibernate.Search"
+	library "Nhibernate.Linq"
 
 package.category = "TemplateEngines"
 package.description = "The TemplateEngine component is used to abstract template processing approaches. It is useful to provide a minimal template processing to your applications. It comes with a default implementation which relies on NVelocity."

@@ -24,11 +24,12 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.Parser"
     depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
     depend "rhino.dsl"   >> "Boo.Lang.Useful"
-
 exclude:
 	library "Iesi.Collections"
 	library "NHibernate.ByteCode.Castle"
 	library "NHibernate"
+	library "NHibernate.Search"
+	library "Nhibernate.Linq"
 
 
 package.category = "IoC"

@@ -17,6 +17,8 @@ exclude:
 	library "Iesi.Collections"
 	library "NHibernate.ByteCode.Castle"
 	library "NHibernate"
+	library "NHibernate.Search"
+	library "Nhibernate.Linq"
 
 package.category = "IoC"
 package.description = "Dynamic Proxy Generator for the CLR."
