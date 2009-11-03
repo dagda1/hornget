@@ -49,15 +49,6 @@
 
 	<include buildfile="common.xml" />
 
-	<target name="common.clover-setup" if="${clover.enabled}">
-		<clover-setup 
-			initstring="${root.dir}/${clover.db}"
-			builddir="${root.dir}/${clover.src}/${project::get-name()}"
-			enabled="${clover.instrument}"
-			flushinterval="1000"
-		/>
-	</target>
-
 	<target name="common.compile-tests"
 		depends="common.clover-setup"
 		description="Compile NUnit tests and copy App.config file to the output directory, if it exists.">
