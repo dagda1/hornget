@@ -13,6 +13,11 @@ install castle.tools:
     shared_library "SharedLibs"
     build_root_dir "build"
 
+exclude:
+	library "Iesi.Collections"
+	library "NHibernate.ByteCode.Castle"
+	library "NHibernate"
+
 package.category = "IoC"
 package.description = "Dynamic Proxy Generator for the CLR."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

@@ -29,6 +29,11 @@ dependencies:
     dependency "rhino.dsl"   >> "Boo.Lang.PatternMatching"
     dependency "rhino.dsl"   >> "Boo.Lang.Useful"	
 
+exclude:
+	library "Iesi.Collections"
+	library "NHibernate.ByteCode.Castle"
+	library "NHibernate"
+
 package.category = "IoC"
 package.description = "Castle validator, templating engine etc."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

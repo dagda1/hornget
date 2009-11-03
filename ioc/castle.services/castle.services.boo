@@ -25,6 +25,11 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
     depend "rhino.dsl"   >> "Boo.Lang.Useful"
 
+exclude:
+	library "Iesi.Collections"
+	library "NHibernate.ByteCode.Castle"
+	library "NHibernate"
+
 
 package.category = "IoC"
 package.description = "Castle provides a number of services."

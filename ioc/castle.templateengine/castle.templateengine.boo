@@ -11,6 +11,11 @@ install castle.templateengine:
 dependencies:
     depend "castle.nvelocity"   >> "NVelocity"
 
+exclude:
+	library "Iesi.Collections"
+	library "NHibernate.ByteCode.Castle"
+	library "NHibernate"
+
 package.category = "TemplateEngines"
 package.description = "The TemplateEngine component is used to abstract template processing approaches. It is useful to provide a minimal template processing to your applications. It comes with a default implementation which relies on NVelocity."
 package.forum = "http://groups.google.com/group/castle-project-users"

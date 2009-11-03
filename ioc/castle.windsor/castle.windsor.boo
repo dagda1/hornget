@@ -26,6 +26,11 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
     depend "rhino.dsl"   >> "Boo.Lang.Useful"
 
+exclude:
+	library "Iesi.Collections"
+	library "NHibernate.ByteCode.Castle"
+	library "NHibernate"
+
 package.category = "IoC"
 package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
