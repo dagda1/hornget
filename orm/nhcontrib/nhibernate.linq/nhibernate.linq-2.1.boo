@@ -3,7 +3,7 @@ install nhibernate.linq:
     build_with nant, buildfile("default.build"), FrameworkVersion35	
 
     switches:
-        parameters "skip.tests=true"
+        parameters "sign=true","skip.tests=true"
 
     with:
         tasks clean,build
