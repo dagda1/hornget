@@ -3,7 +3,7 @@ install nhibernate:
     build_with nant, buildfile("default.build"), FrameworkVersion35	
 
     switches:
-        parameters "with.examples=false"
+        parameters "sign=false","with.examples=false"
 
     with:
         tasks clean,build
