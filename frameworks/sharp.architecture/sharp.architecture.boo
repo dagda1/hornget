@@ -18,7 +18,7 @@ dependencies:
     depend "nhibernate"           >> "2.1" >> "NHibernate"     
     depend "nhibernate"           >> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"           >> "2.1" >> "Iesi.Collections"
-    depend "nhibernate.linq"               >> "NHibernate.Linq"
+    depend "nhibernate.linq"      >> "2.1" >> "NHibernate.Linq"
     depend "nhibernate.validator"          >> "NHibernate.Validator"
     depend "mvccontrib"                    >> "MvcContrib"
     depend "mvccontrib"                    >> "MvcContrib.FluentHtml"
