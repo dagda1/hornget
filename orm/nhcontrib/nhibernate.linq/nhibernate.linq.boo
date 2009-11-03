@@ -8,7 +8,7 @@ install nhibernate.linq:
     with:
         tasks clean,build
 
-    generate_strong_key
+    #generate_strong_key
 
     shared_library "lib"
     build_root_dir "build"

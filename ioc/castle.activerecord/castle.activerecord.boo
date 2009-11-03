@@ -9,7 +9,7 @@ install castle.activerecord:
     build_with nant, buildfile("ActiveRecord/activerecord.build"), FrameworkVersion35
 
     switches:
-        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
+        parameters "sign=false","common.testrunner.enabled=false", "common.silverlight=false"
 
     shared_library "SharedLibs"
     build_root_dir "build"
