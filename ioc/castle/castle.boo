@@ -5,7 +5,7 @@ install castle:
         tasks quick, rebuild
 
     switches:
-        parameters "sign=false","build.warnaserrors=false"
+        parameters "sign=true","build.warnaserrors=false"
 
     shared_library "SharedLibs"
     build_root_dir "build"
