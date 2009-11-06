@@ -5,7 +5,7 @@
     with:
         tasks full
 
-    build_root_dir "build"
+    build_root_dir "release"
     shared_library "lib"
 
 package.category = "Mappers"
