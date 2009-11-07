@@ -13,7 +13,10 @@ dependencies:
     depend "nhibernate"        >> "2.1" >> "NHibernate"
     depend "nhibernate"        >> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"        >> "2.1" >> "Iesi.Collections"
-
+	
+exclude:
+    library "Rhino.Mocks"
+  
 package.category = "ORM"
 package.description = "Fluent, XML-less, compile safe, automated, testable mappings for NHibernate "
 package.forum = "http://groups.google.com/group/fluent-nhibernate"

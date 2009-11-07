@@ -9,7 +9,7 @@
     shared_library "lib"
 
 exclude:
-  library "Rhino.Tools"
+  library "Rhino.Mocks"
 
 package.category = "Mappers"
 package.description = "A convention-based object-object mapper in .NET."
