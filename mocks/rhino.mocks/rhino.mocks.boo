@@ -4,8 +4,8 @@
 	with:
 		tasks Compile 
 
-    build_root_dir "build"
-    shared_library "SharedLibs"
+build_root_dir "build"
+shared_library "SharedLibs"
     
 dependencies:
     depend "castle.tools" >> "Castle.Core"
