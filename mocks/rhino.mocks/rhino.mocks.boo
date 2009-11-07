@@ -1,9 +1,11 @@
 ﻿install rhino.mocks:
     get_from git("git://github.com/ayende/rhino-mocks.git")
-    build_with psake, buildfile("psake.ps1"), FrameworkVersion35
+    build_with psake, buildfile("default.ps1"), FrameworkVersion35    
+	with:
+		tasks Compile 
 
-    build_root_dir "build"
-    shared_library "SharedLibs"
+build_root_dir "build"
+shared_library "SharedLibs"
     
 dependencies:
     depend "castle.tools" >> "Castle.Core"
