@@ -20,6 +20,7 @@ dependencies:
     depend "castle.components"           >> "Castle.Components.Validator"
     depend "nhibernate.linq"      >> "2.1" >> "NHibernate.Linq"
     depend "nhibernate.search"          >> "NHibernate.Search"
+    depend "nhibernate.search"          >> "Lucene.Net"
     depend "nhibernate"         >> "2.1" >> "NHibernate"
     depend "nhibernate"         >> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"         >> "2.1" >> "Iesi.Collections"
@@ -31,8 +32,11 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.Interpreter"
     depend "rhino.dsl"   >> "Boo.Lang.Parser"
     depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
-    depend "rhino.dsl"   >> "Boo.Lang.Useful"
-
+    depend "rhino.dsl"   >> "Boo.Lang.Useful"   
+    
+exclude:
+	library "Rhino.Mocks"
+	
 package.category = "IoC"
 package.description = "The Castle ActiveRecord project is an implementation of the ActiveRecord pattern for .NET."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

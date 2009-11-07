@@ -14,6 +14,7 @@ exclude:
 	library "NHibernate"
 	library "NHibernate.Search"
 	library "Nhibernate.Linq"
+	library "Lucene.Net"
 
 package.category = "ViewEngines"
 package.description = "NVelocity is a port of the excellent Apache Jakarta Velocity project. It is a very simple, easy to learn and extensible template engine."

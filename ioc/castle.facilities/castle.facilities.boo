@@ -26,6 +26,7 @@ dependencies:
     depend "nhibernate"          >> "2.1" >> "NHibernate"  
     depend "nhibernate"          >> "2.1" >> "NHibernate.ByteCode.Castle"  
     depend "nhibernate.linq"     >> "2.1" >> "NHibernate.Linq"  
+    depend "nhibernate.linq"     >> "2.1" >> "Lucene.Net"  
     depend "nhibernate.search"   >> "2.1" >> "NHibernate.Search"  
     depend "nhibernate.search"   >> "2.1" >> "Lucene.Net"  
     depend "rhino.dsl"   >> "Boo.Lang"
@@ -38,8 +39,9 @@ dependencies:
     depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
     depend "rhino.dsl"   >> "Boo.Lang.Useful"
     depend "nhibernate"          >> "2.1" >> "Iesi.Collections" 
-
-
+exclude:	
+	library "Rhino.Mocks"
+	
 package.category = "IoC"
 package.description = "A castle facility augments the container with new functionality."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

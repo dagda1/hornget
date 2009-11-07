@@ -30,6 +30,8 @@ exclude:
 	library "NHibernate"
 	library "NHibernate.Search"
 	library "Nhibernate.Linq"
+	library "Lucene.Net"
+	library "Rhino.Mocks"
 
 
 package.category = "IoC"

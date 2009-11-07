@@ -1,7 +1,11 @@
 install mvccontrib:
     get_from git("git://github.com/mvccontrib/MvcContrib.git")
-    build_with batch, buildfile("build.bat"), FrameworkVersion35	
-
+    build_with nant, buildfile("nant.build"), FrameworkVersion35	
+    with:
+        tasks build
+    switches:
+        parameters "runtests=false"
+    
     shared_library "bin"
     build_root_dir "build"
 
@@ -30,6 +34,7 @@ dependencies:
     depend "castle.facilities"   >> "Castle.Facilities.WcfIntegration"
     depend "castle.windsor"      >> "Castle.MicroKernel"
     depend "castle.windsor"      >> "Castle.Windsor"
+    depend "rhino.mocks"         >> "Rhino.Mocks"
 
 package.category = "Web"
 package.description = "This project adds additional functionality on top of the ASP.NET MVC Framework."

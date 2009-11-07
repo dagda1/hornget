@@ -18,7 +18,9 @@ exclude:
 	library "NHibernate.ByteCode.Castle"
 	library "NHibernate"
 	library "NHibernate.Search"
-	library "Nhibernate.Linq"
+	library "Lucene.Net"
+	library "Nhibernate.Linq"	
+	library "Rhino.Mocks"
 
 package.category = "IoC"
 package.description = "Dynamic Proxy Generator for the CLR."

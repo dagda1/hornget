@@ -8,6 +8,9 @@
     build_root_dir "release"
     shared_library "lib"
 
+exclude:
+  library "Rhino.Tools"
+
 package.category = "Mappers"
 package.description = "A convention-based object-object mapper in .NET."
 package.forum = "http://groups.google.com/group/automapper-users"

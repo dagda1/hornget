@@ -35,6 +35,8 @@ exclude:
 	library "NHibernate"
 	library "NHibernate.Search"
 	library "Nhibernate.Linq"
+	library "Rhino.Mocks"
+	library "Lucene.Net"
 
 package.category = "IoC"
 package.description = "Castle validator, templating engine etc."
