@@ -34,7 +34,6 @@ dependencies:
     depend "castle.facilities"   >> "Castle.Facilities.WcfIntegration"
     depend "castle.windsor"      >> "Castle.MicroKernel"
     depend "castle.windsor"      >> "Castle.Windsor"
-    depend "rhino.mocks"         >> "Rhino.Mocks"
 
 package.category = "Web"
 package.description = "This project adds additional functionality on top of the ASP.NET MVC Framework."
