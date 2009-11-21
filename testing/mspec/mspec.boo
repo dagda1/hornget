@@ -5,10 +5,10 @@ install mspec:
 	with:
 		tasks package
 	switches:
-		parameters "target=Debug"
+		parameters "target=Release"
 	
 	shared_library "Libraries"
-	build_root_dir "Build/Debug"
+	build_root_dir "Build/Release"
 
 package.category = "Testing"
 package.description = "A RSpec-like BDD framework for .NET"
