@@ -38,6 +38,6 @@ dependencies:
 package.category = "Web"
 package.description = "This project adds additional functionality on top of the ASP.NET MVC Framework."
 package.forum = "http://groups.google.co.uk/group/mvccontrib-discuss"
-package.homepage = "http://www.codeplex.com/MVCContrib"
+package.homepage = "http://www.codeplex.com/MVCContrib.org"
 package.name = "MVCContrib"
 package.notes = ""
