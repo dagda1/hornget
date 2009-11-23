@@ -1,4 +1,4 @@
-﻿install rhino.dsl:
+﻿install rhino.commons:
     get_from git("git://github.com/lorenzomelato/rhino-commons.git")
     build_with psake, buildfile("default.ps1"), FrameworkVersion35    
 	with:
@@ -24,15 +24,6 @@ dependencies:
     depend "nhibernate"          >> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"          >> "2.1" >> "Iesi.Collections"
     depend "rhino.dsl"   >> "Rhino.Dsl"
-    depend "rhino.dsl"   >> "Boo.Lang"
-    depend "rhino.dsl"   >> "Boo.Lang.CodeDom"
-    depend "rhino.dsl"   >> "Boo.Lang.Compiler"
-    depend "rhino.dsl"   >> "Boo.Lang.dll"
-    depend "rhino.dsl"   >> "Boo.Lang.Extensions"
-    depend "rhino.dsl"   >> "Boo.Lang.Interpreter"
-    depend "rhino.dsl"   >> "Boo.Lang.Parser"
-    depend "rhino.dsl"   >> "Boo.Lang.PatternMatching"
-    depend "rhino.dsl"   >> "Boo.Lang.Useful"
 
 package.category = "Frameworks"
 package.description = "Support and extension for many advance usecases"
