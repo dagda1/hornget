@@ -1,8 +1,8 @@
 install rhino.security:
 	get_from git("git://github.com/ayende/rhino-security.git")
 	build_with psake, buildfile("default.ps1"), FrameworkVersion35
-		with:
-			tasks Compile
+	with:
+		tasks Compile
 
 build_root_dir "build"
 shared_library "SharedLibs"
