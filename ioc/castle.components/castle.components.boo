@@ -19,15 +19,6 @@ dependencies:
     dependency "castle.windsor"   >> "Castle.DynamicProxy2"
     dependency "castle.windsor"   >> "Castle.MicroKernel"
     dependency "castle.windsor"   >> "Castle.Windsor"
-    dependency "rhino.dsl"   >> "Boo.Lang"
-    dependency "rhino.dsl"   >> "Boo.Lang.CodeDom"
-    dependency "rhino.dsl"   >> "Boo.Lang.Compiler"
-    dependency "rhino.dsl"   >> "Boo.Lang.dll"
-    dependency "rhino.dsl"   >> "Boo.Lang.Extensions"
-    dependency "rhino.dsl"   >> "Boo.Lang.Interpreter"
-    dependency "rhino.dsl"   >> "Boo.Lang.Parser"
-    dependency "rhino.dsl"   >> "Boo.Lang.PatternMatching"
-    dependency "rhino.dsl"   >> "Boo.Lang.Useful"	
 
 exclude:
 	library "Iesi.Collections"
