@@ -7,6 +7,10 @@ install castle.windsor:
 
     shared_library "lib"
     build_root_dir "build"
+    
+dependencies:
+    dependency "castle.dynamicproxy" >> "Castle.DynamicProxy"
+    dependency "castle.dynamicproxy" >> "Castle.Core"
 
 package.category = "IoC"
 package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."
