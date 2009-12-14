@@ -11,8 +11,8 @@ install nhibernate.search:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.tools"          >> "Castle.Core"
-    depend "castle.tools"          >> "Castle.DynamicProxy2"
+    depend "castle.dynamicproxy"          >> "Castle.Core"
+    depend "castle.dynamicproxy"          >> "Castle.DynamicProxy2"
     depend "nhibernate"   >> "2.1" >> "NHibernate"
     depend "nhibernate"   >> "2.1" >> "Iesi.Collections"
     depend "nhibernate"   >> "2.1" >> "NHibernate.ByteCode.Castle"

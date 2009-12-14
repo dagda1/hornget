@@ -9,7 +9,7 @@ install castle.services.logging:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.core" >> "1.1" >> "Castle.Core"
+    dependency "castle.core" >> "Castle.Core"
 
 package.category = "IoC"
 package.description = "Castle provides an abstraction to the logging API of choice. The ILogger and ILoggerFactory interface, exposed by Castle.Core assembly are the main abstractions."

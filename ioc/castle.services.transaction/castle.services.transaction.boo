@@ -9,7 +9,7 @@ install castle.services.transaction:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.core" >> "1.1" >> "Castle.Core"
+    dependency "castle.core" >> "Castle.Core"
 
 package.category = "IoC"
 package.description = "Castle.Service.Transaction was inspired by the Java Transaction API (JTA), although it is a simplified version with no support for two phase commit."

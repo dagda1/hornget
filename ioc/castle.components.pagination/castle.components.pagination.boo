@@ -1,4 +1,4 @@
-install castle.core:
+install castle.pagination:
     get_from svn("http://svn.castleproject.org:8080/svn/castle/Components/Pagination/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
