@@ -22,7 +22,6 @@ dependencies:
     depend "castle.windsor"                 >> "Castle.DynamicProxy2"
     depend "castle.windsor"                 >> "castle.microKernel"
     depend "castle.windsor"                 >> "castle.windsor"
-    depend "rhino"                          >> "Rhino.Mocks"
     depend "mvccontrib"                     >> "MvcContrib"
     depend @log4net                >> "1.2.10"  >> "log4net"
 
