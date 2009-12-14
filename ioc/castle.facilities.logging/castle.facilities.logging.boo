@@ -13,8 +13,6 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.DynamicProxy2"
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
-    dependency "castle.services.transaction"						>> "castle.services.transaction"
-    dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
 
 package.category = "IoC"
 package.description = "The logging facility provides a seemless way to add logging capabilities to your application. There are two levels of integration."

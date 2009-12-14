@@ -1,5 +1,5 @@
 install castle.facilities.wcfintegration:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/Synchronize/trunk/")
+    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/Wcf/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
