@@ -3,7 +3,7 @@ install castle.nhibernateintegration:
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
-        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
+        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false", "build.warnaserrors=false"
 
     shared_library "lib"
     build_root_dir "build"
@@ -13,6 +13,7 @@ dependencies:
     dependency "castle.windsor" >> "Castle.DynamicProxy2"
     dependency "castle.windsor" >> "Castle.MicroKernel"
     dependency "castle.windsor" >> "Castle.Windsor"
+    dependency "castle.services.transaction" >> "castle.services.transaction"
 
 package.category = "IoC"
 package.description = "The NHibernate Facility enables the usage of NHibernate O/R framework for your components."
