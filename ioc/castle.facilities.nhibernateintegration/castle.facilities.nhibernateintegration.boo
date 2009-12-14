@@ -9,11 +9,15 @@ install castle.nhibernateintegration:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.windsor" >> "Castle.Core"
-    dependency "castle.windsor" >> "Castle.DynamicProxy2"
-    dependency "castle.windsor" >> "Castle.MicroKernel"
-    dependency "castle.windsor" >> "Castle.Windsor"
-    dependency "castle.services.transaction" >> "castle.services.transaction"
+    dependency "castle.windsor"										>> "Castle.Core"
+    dependency "castle.windsor"										>> "Castle.DynamicProxy2"
+    dependency "castle.windsor"										>> "Castle.MicroKernel"
+    dependency "castle.windsor"										>> "Castle.Windsor"
+    dependency "castle.services.transaction"						>> "castle.services.transaction"
+    dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
+    dependency "nhibernate"				>> "2.1"					>> "Nhibernate"
+    dependency "nhibernate"				>> "2.1"					>> "Iesi.Collections"
+    dependency "nhibernate"				>> "2.1"					>> "NHibernate.ByteCode.Castle"
 
 package.category = "IoC"
 package.description = "The NHibernate Facility enables the usage of NHibernate O/R framework for your components."
