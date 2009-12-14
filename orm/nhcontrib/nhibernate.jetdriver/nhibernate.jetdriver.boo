@@ -9,8 +9,8 @@ install nhibernate.jetdriver:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.tools" >> "Castle.Core"
-    depend "castle.tools" >> "Castle.DynamicProxy2"
+    depend "castle.dynamicproxy" >> "Castle.Core"
+    depend "castle.dynamicproxy" >> "Castle.DynamicProxy2"
     depend "nhibernate"   >> "NHibernate"
     depend "nhibernate"   >> "Iesi.Collections"
     depend "nhibernate"   >> "NHibernate.ByteCode.Castle"

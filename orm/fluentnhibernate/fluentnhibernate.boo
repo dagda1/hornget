@@ -6,8 +6,8 @@ install fluentnhibernate:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.tools"               >> "Castle.Core"
-    depend "castle.tools"               >> "Castle.DynamicProxy2"
+    depend "castle.dynamicproxy"               >> "Castle.Core"
+    depend "castle.dynamicproxy"               >> "Castle.DynamicProxy2"
     depend "castle.tools"               >> "Castle.DynamicProxy"
     depend "nhibernate.caches"          >> "NHibernate.Caches.SysCache"
     depend "nhibernate"        >> "2.1" >> "NHibernate"

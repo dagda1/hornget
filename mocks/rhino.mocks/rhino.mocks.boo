@@ -8,8 +8,8 @@ build_root_dir "build"
 shared_library "SharedLibs"
     
 dependencies:
-    depend "castle.tools" >> "Castle.Core"
-    depend "castle.tools" >> "Castle.DynamicProxy2"  
+    depend "castle.dynamicproxy" >> "Castle.Core"
+    depend "castle.dynamicproxy" >> "Castle.DynamicProxy2"  
 
 package.category = "Mocks"
 package.description = "Dynamic Mocking Framework for .NET."
