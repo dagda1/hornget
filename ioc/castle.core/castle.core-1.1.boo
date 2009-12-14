@@ -1,5 +1,5 @@
 install castle.core:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/!svn/bc/6325/trunk/")
+    get_from svn("http://svn.castleproject.org:8080/svn/castle/Core/trunk", 6325)
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
