@@ -1,5 +1,5 @@
 install castle.templateengine:
-    get_from svn("http://svn.castleproject.org/svn/castle/Components/TemplateEngine/trunk/")
+    get_from svn("http://svn.castleproject.org:8080/svn/castle/Components/TemplateEngine/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35	
 
     switches:
