@@ -13,8 +13,6 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.DynamicProxy2"
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
-    dependency "castle.services.transaction"						>> "castle.services.transaction"
-    dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
 
 package.category = "IoC"
 package.description = "Facilities augment the MicroKernel capabilities by integrating it with a different project or technology, or by implementing new semantics."
