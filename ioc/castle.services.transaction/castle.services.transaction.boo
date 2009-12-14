@@ -1,6 +1,6 @@
 install castle.services:
     get_from svn("http://svn.castleproject.org:8080/svn/castle/Services/Transaction/trunk/")
-    build_with nant, buildfile("src/Transaction.build"), FrameworkVersion35
+    build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
         parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
