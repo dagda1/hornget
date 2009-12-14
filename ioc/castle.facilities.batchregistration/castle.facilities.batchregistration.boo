@@ -1,5 +1,5 @@
-install castle.facilities.activerecordintegration:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/ActiveRecordIntegration/trunk/")
+install castle.facilities.batchregistration:
+    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/BatchRegistration/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
@@ -13,15 +13,12 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.DynamicProxy2"
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
-    dependency "castle.services.transaction"								>> "castle.services.transaction"
-    dependency "castle.facilities.automatictransactionmanagement"					>> "Castle.Facilities.AutomaticTransactionManagement"
-    dependency "nhibernate"				>> "2.1"					>> "Nhibernate"
-    dependency "nhibernate"				>> "2.1"					>> "Iesi.Collections"
-    dependency "nhibernate"				>> "2.1"					>> "NHibernate.ByteCode.Castle"
+    dependency "castle.services.transaction"						>> "castle.services.transaction"
+    dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
 
 package.category = "IoC"
-package.description = "The ActiveRecord Integration Facility takes care of configuring and starting Castle ActiveRecord and adds declarative transaction support integration."
+package.description = "The Batch Registration Facility registers components based on configuration instructions."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
-package.homepage = "http://www.castleproject.org/container/facilities/v1rc3/arintegration/index.html"
-package.name = "Castle Facilities Activerecord Integration"
+package.homepage = "http://www.castleproject.org/container/facilities/v1rc3/batch/index.html"
+package.name = "Castle Facilities Batchregistration"
 package.notes = ""
