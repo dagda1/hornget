@@ -1,4 +1,4 @@
-install castle.services:
+install castle.logging:
     get_from svn("http://svn.castleproject.org:8080/svn/castle/Services/Logging/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
@@ -12,8 +12,8 @@ dependencies:
     dependency "castle.core" >> "1.1" >> "Castle.Core"
 
 package.category = "IoC"
-package.description = "Castle provides a number of services."
+package.description = "Castle provides an abstraction to the logging API of choice. The ILogger and ILoggerFactory interface, exposed by Castle.Core assembly are the main abstractions."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
 package.homepage = "http://www.castleproject.org/"
-package.name = "Castle Services"
+package.name = "Castle Services Logging"
 package.notes = ""

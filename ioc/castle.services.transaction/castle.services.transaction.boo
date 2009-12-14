@@ -1,4 +1,4 @@
-install castle.services:
+install castle.services.transaction:
     get_from svn("http://svn.castleproject.org:8080/svn/castle/Services/Transaction/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
@@ -12,8 +12,8 @@ dependencies:
     dependency "castle.core" >> "1.1" >> "Castle.Core"
 
 package.category = "IoC"
-package.description = "Castle provides a number of services."
+package.description = "Castle.Service.Transaction was inspired by the Java Transaction API (JTA), although it is a simplified version with no support for two phase commit."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
 package.homepage = "http://www.castleproject.org/"
-package.name = "Castle Services"
+package.name = "Castle Services Logging"
 package.notes = ""
