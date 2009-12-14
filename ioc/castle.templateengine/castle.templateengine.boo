@@ -2,22 +2,15 @@ install castle.templateengine:
     get_from svn("https://svn.castleproject.org/svn/castle/Components/TemplateEngine/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35	
 
-    with:
-        tasks build
+    switches:
+        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
     shared_library "lib"
     build_root_dir "build"
 
 dependencies:
-    depend "castle.nvelocity"   >> "NVelocity"
-
-exclude:
-	library "Iesi.Collections"
-	library "NHibernate.ByteCode.Castle"
-	library "NHibernate"
-	library "NHibernate.Search"
-	library "Nhibernate.Linq"
-	library "Lucene.Net"
+    depend "castle.nvelocity" >> "NVelocity"
+    depend "castle.core"      >> "Castle.Core"
 
 package.category = "TemplateEngines"
 package.description = "The TemplateEngine component is used to abstract template processing approaches. It is useful to provide a minimal template processing to your applications. It comes with a default implementation which relies on NVelocity."
