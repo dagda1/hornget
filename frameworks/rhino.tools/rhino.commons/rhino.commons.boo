@@ -18,7 +18,7 @@ dependencies:
     depend "castle.components.validator"						>> "Castle.Components.Validator"
     depend "castle.activerecord"								>> "Castle.ActiveRecord"
     depend "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
-    depend "nhibernate.caches"									>> "NHibernate.Caches.SysCache"
+    depend "nhibernate.caches"										>> "NHibernate.Caches.SysCache"
     depend "nhibernate"											>> "2.1" >> "NHibernate"     
     depend "nhibernate"											>> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"											>> "2.1" >> "Iesi.Collections"

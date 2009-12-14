@@ -9,13 +9,13 @@ install castle.activerecord:
     build_root_dir "build"
     
 dependencies:
-    dependency "nhibernate" >> "2.1.0" >> "NHibernate"
-    dependency "nhibernate" >> "2.1.0" >> "Antlr3.Runtime"
-    dependency "nhibernate" >> "2.1.0" >> "Iesi.Collections"
-    dependency "nhibernate" >> "2.1.0" >> "NHibernate.ByteCode.Castle"
-    dependency "nhibernate" >> "2.1.0" >> "NHibernate.Linq"
-    dependency "nhibernate" >> "2.1.0" >> "Castle.Core"
-    dependency "nhibernate" >> "2.1.0" >> "Castle.DynamicProxy2"
+    dependency "nhibernate" >> "2.1" >> "NHibernate"
+    dependency "nhibernate" >> "2.1" >> "Antlr3.Runtime"
+    dependency "nhibernate" >> "2.1" >> "Iesi.Collections"
+    dependency "nhibernate" >> "2.1" >> "NHibernate.ByteCode.Castle"
+    dependency "nhibernate" >> "2.1" >> "NHibernate.Linq"
+    dependency "nhibernate" >> "2.1" >> "Castle.Core"
+    dependency "nhibernate" >> "2.1" >> "Castle.DynamicProxy2"
     dependency "nhibernate.search" >> "NHibernate.Search"
     dependency "nhibernate.linq" >> "NHibernate.Linq"
 
