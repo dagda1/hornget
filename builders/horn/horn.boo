@@ -1,5 +1,5 @@
 ﻿install horn:
-    get_from svn("http://hornget.googlecode.com/svn/trunk/")
+    get_from git("http://github.com/dagda1/horn_src")
     build_with nant, buildfile("src/Horn.build"), FrameworkVersion35	
 
     build_root_dir "src/build"
