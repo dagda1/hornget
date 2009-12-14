@@ -1,5 +1,5 @@
-install castle.automatictransactionmanagement:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/AutomaticTransactionManagement/trunk/")
+install castle.nhibernateintegration:
+    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/NHibernateIntegration/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
@@ -15,8 +15,8 @@ dependencies:
     dependency "castle.windsor" >> "Castle.Windsor"
 
 package.category = "IoC"
-package.description = "The Automatic Transaction Management Facility performs declarative transaction management for your classes using interceptors."
+package.description = "The NHibernate Facility enables the usage of NHibernate O/R framework for your components."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
-package.homepage = "http://www.castleproject.org/container/facilities/trunk/atm/index.html"
-package.name = "Castle Facilities Automatic Transaction Management"
+package.homepage = "http://www.castleproject.org/container/facilities/trunk/nhibernate/index.html"
+package.name = "Castle Facilities Nhibernate Integration"
 package.notes = ""
