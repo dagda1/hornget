@@ -1,5 +1,5 @@
 install nhibernate:
-    get_from svn("https://nhibernate.svn.sourceforge.net/svnroot/nhibernate/tags/2.1.0GA/")
+    get_from svn("https://nhibernate.svn.sourceforge.net/svnroot/nhibernate/tags/2.1.0GA/nhibernate")
     build_with nant, buildfile("default.build"), FrameworkVersion35	
 
     switches:
@@ -12,8 +12,8 @@ install nhibernate:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.tools" >> "Castle.Core"
-    depend "castle.tools" >> "Castle.DynamicProxy2"
+    depend "castle.dynamicproxy" >> "2.1" >> "Castle.Core"
+    depend "castle.dynamicproxy" >> "2.1" >> "Castle.DynamicProxy2"
 
 package.category = "ORM"
 package.description = "NHibernate handles persisting plain .NET objects to and from an underlying relational database."
