@@ -12,8 +12,8 @@ install caliburn:
     build_root_dir "bin/net-3.5/release"
 
 dependencies:
-    depend "castle.tools"   >> "Castle.Core"
-    depend "castle.tools"   >> "Castle.DynamicProxy2"
+    depend "castle.windsor"   >> "Castle.Core"
+    depend "castle.windsor"   >> "Castle.DynamicProxy2"
     depend "castle.windsor" >> "Castle.MicroKernel"
     depend "castle.windsor" >> "Castle.Windsor"
 

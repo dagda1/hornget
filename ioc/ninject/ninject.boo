@@ -12,13 +12,13 @@
 	build_root_dir "bin/net-3.5/release" 
 
 dependencies:    
-	depend "castle"   >> "Castle.Core"    
-	depend "castle"   >> "Castle.DynamicProxy2"    
-	depend "castle"   >> "Castle.MicroKernel"    
-	depend "castle"   >> "Castle.Windsor"	
-	depend "castle"   >> "Castle.Mikrokernel"	
-	depend "castle"   >> "Castle.MonoRail.Framework"    
-	depend "linfu"    >> "LinFu.DynamicProxy" 
+	depend "castle.windsor"   	>> "Castle.Core"    
+	depend "castle.windsor"   	>> "Castle.DynamicProxy2"    
+	depend "castle.windsor"   	>> "Castle.MicroKernel"    
+	depend "castle.windsor"   	>> "Castle.Windsor"	
+	depend "castle.windsor"   	>> "Castle.Mikrokernel"	
+	depend "castle.monorail"   	>> "Castle.MonoRail.Framework"    
+	depend "linfu"    		>> "LinFu.DynamicProxy" 
 
 package.category = "IoC"
 package.description = "Ninject: Lightning-fast dependency injection for .NET"

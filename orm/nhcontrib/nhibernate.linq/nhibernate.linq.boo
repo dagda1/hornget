@@ -14,11 +14,11 @@ install nhibernate.linq:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.dynamicproxy" >> "Castle.Core"
-    depend "castle.dynamicproxy" >> "Castle.DynamicProxy2"
-    depend "nhibernate"   >> "NHibernate"
-    depend "nhibernate"   >> "Iesi.Collections"
-    depend "nhibernate"   >> "NHibernate.ByteCode.Castle"
+    depend "castle.dynamicproxy" 	>> "Castle.Core"
+    depend "castle.dynamicproxy" 	>> "Castle.DynamicProxy2"
+    depend "nhibernate"   		>> "NHibernate"
+    depend "nhibernate"   		>> "Iesi.Collections"
+    depend "nhibernate"   		>> "NHibernate.ByteCode.Castle"
 
 package.category = "ORM"
 package.description = "NHibernate Linq - Linq provider for NHibernate."
