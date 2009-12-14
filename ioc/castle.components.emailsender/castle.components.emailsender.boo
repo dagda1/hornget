@@ -1,4 +1,4 @@
-install castle.core:
+install castle.emailsender:
     get_from svn("http://svn.castleproject.org:8080/svn/castle/Components/EmailSender/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
