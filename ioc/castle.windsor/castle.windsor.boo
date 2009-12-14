@@ -9,7 +9,7 @@ install castle.windsor:
     build_root_dir "build"
     
 dependencies:
-    dependency "castle.dynamicproxy" >> "Castle.DynamicProxy"
+    dependency "castle.dynamicproxy" >> "Castle.DynamicProxy2"
     dependency "castle.dynamicproxy" >> "Castle.Core"
 
 package.category = "IoC"
