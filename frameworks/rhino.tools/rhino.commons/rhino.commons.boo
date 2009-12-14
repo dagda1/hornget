@@ -8,9 +8,8 @@ build_root_dir "build"
 shared_library "SharedLibs"
 
 dependencies:
-    depend "castle.tools"                 >> "Castle.Core"
-    depend "castle.tools"                 >> "Castle.DynamicProxy"
-    depend "castle.tools"                 >> "Castle.DynamicProxy2"
+    depend "castle.windsor"               >> "Castle.Core"
+    depend "castle.windsor"               >> "Castle.DynamicProxy2"
     depend "castle.windsor"               >> "Castle.MicroKernel"
     depend "castle.windsor"               >> "Castle.Windsor"
     depend "castle.services"              >> "Castle.Services.Transaction"
@@ -23,7 +22,7 @@ dependencies:
     depend "nhibernate"          >> "2.1" >> "NHibernate"     
     depend "nhibernate"          >> "2.1" >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"          >> "2.1" >> "Iesi.Collections"
-    depend "rhino.dsl"   >> "Rhino.Dsl"
+    depend "rhino.dsl"					  >> "Rhino.Dsl"
 
 package.category = "Frameworks"
 package.description = "Support and extension for many advance usecases"
