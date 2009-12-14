@@ -1,5 +1,5 @@
 install castle.nvelocity:
-    get_from svn("https://svn.castleproject.org/svn/castle/NVelocity/trunk/")
+    get_from svn("http://svn.castleproject.org/svn/castle/NVelocity/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35	
 
     switches:
