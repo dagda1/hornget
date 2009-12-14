@@ -6,13 +6,13 @@ install fluentnhibernate:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.dynamicproxy"               >> "Castle.Core"
-    depend "castle.dynamicproxy"               >> "Castle.DynamicProxy2"
-    depend "castle.tools"               >> "Castle.DynamicProxy"
-    depend "nhibernate.caches"          >> "NHibernate.Caches.SysCache"
-    depend "nhibernate"        >> "2.1" >> "NHibernate"
-    depend "nhibernate"        >> "2.1" >> "NHibernate.ByteCode.Castle"
-    depend "nhibernate"        >> "2.1" >> "Iesi.Collections"
+    depend "castle.dynamicproxy"	>> "Castle.Core"
+    depend "castle.dynamicproxy"	>> "Castle.DynamicProxy2"
+    depend "castle.dynamicproxy"	>> "Castle.DynamicProxy"
+    depend "nhibernate.caches"		>> "NHibernate.Caches.SysCache"
+    depend "nhibernate"				>> "2.1" >> "NHibernate"
+    depend "nhibernate"				>> "2.1" >> "NHibernate.ByteCode.Castle"
+    depend "nhibernate"				>> "2.1" >> "Iesi.Collections"
 	
 exclude:
     library "Rhino.Mocks"
