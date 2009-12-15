@@ -25,7 +25,7 @@ dependencies:
     dependency "castle.components.dictionaryadapter"    >> "Castle.Components.DictionaryAdapter"
     dependency "castle.components.pagination"           >> "Castle.Components.Pagination"
     dependency "castle.components.validator"            >> "Castle.Components.Validator"
-    dependency "castle.components.emailsender" 			>> "Castle.Components.Common.EmailSender"
+    dependency "castle.components.emailsender" >> "1.1" >> "Castle.Components.Common.EmailSender"
     
 
 package.category = "IoC"
