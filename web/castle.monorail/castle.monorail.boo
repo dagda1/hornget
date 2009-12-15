@@ -29,8 +29,8 @@ dependencies:
     
 
 package.category = "IoC"
-package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."
+package.description = "MonoRail differs from the standard WebForms way of development as it enforces separation of concerns; controllers just handle application flow, models represent the data, and the view is just concerned about presentation logic."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
-package.homepage = "http://www.castleproject.org/"
-package.name = "Castle Windsor"
+package.homepage = "http://www.castleproject.org/monorail/"
+package.name = "Castle Monorail"
 package.notes = ""

@@ -1,4 +1,4 @@
-install castle.core:
+install castle.components.emailSender:
     get_from svn("http://svn.castleproject.org:8080/svn/castle/Components/EmailSender/trunk/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
@@ -12,5 +12,5 @@ package.category = "IoC"
 package.description = ""
 package.forum = "http://groups.google.com/group/castle-project-users"
 package.homepage = "http://www.castleproject.org/"
-package.name = "Castle.Components.EmailSender"
+package.name = "Castle Components EmailSender"
 package.notes = ""
