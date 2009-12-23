@@ -14,6 +14,10 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "The Batch Registration Facility registers components based on configuration instructions."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

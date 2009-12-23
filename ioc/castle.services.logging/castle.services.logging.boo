@@ -11,6 +11,10 @@ install castle.services.logging:
 dependencies:
     dependency "castle.core" >> "Castle.Core"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "Castle provides an abstraction to the logging API of choice. The ILogger and ILoggerFactory interface, exposed by Castle.Core assembly are the main abstractions."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

@@ -8,6 +8,10 @@ install castle.core:
     shared_library "lib"
     build_root_dir "build"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."
 package.forum = "http://groups.google.com/group/castle-project-users"

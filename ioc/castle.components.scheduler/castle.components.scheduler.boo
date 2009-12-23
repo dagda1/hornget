@@ -14,6 +14,10 @@ dependencies:
     dependency "castle.windsor"                         >> "Castle.MicroKernel"
     dependency "castle.windsor"                         >> "Castle.DynamicProxy2"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "The Castle.Components.Scheduler project offers a lightweight and reusable general-purpose scheduling service that integrates well with most .Net applications."
 package.forum = "http://groups.google.com/group/castle-project-users"

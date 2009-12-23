@@ -12,6 +12,10 @@ dependencies:
     dependency "castle.components.validator" >> "Castle.Core"
     dependency "castle.components.validator" >> "Castle.Components.Validator"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = ""
 package.forum = "http://groups.google.com/group/castle-project-users"

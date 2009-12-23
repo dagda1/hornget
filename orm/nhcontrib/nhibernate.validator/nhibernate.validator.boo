@@ -15,7 +15,7 @@ install nhibernate.validator:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.dynamicproxy"          >> "Castle.Core"
+    depend "castle.core"                  >> "Castle.Core"
     depend "castle.dynamicproxy"          >> "Castle.DynamicProxy2"
     depend "nhibernate"   >> "2.1" >> "NHibernate"
     depend "nhibernate"   >> "2.1" >> "Iesi.Collections"

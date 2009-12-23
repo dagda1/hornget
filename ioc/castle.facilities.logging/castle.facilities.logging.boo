@@ -14,6 +14,10 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "The logging facility provides a seemless way to add logging capabilities to your application. There are two levels of integration."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

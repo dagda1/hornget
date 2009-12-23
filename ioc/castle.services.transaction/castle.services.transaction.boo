@@ -11,6 +11,10 @@ install castle.services.transaction:
 dependencies:
     dependency "castle.core" >> "Castle.Core"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "Castle.Service.Transaction was inspired by the Java Transaction API (JTA), although it is a simplified version with no support for two phase commit."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

@@ -11,6 +11,10 @@ install castle.dynamicproxy:
 dependencies:
     dependency "castle.core" >> "Castle.Core"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "Castle DynamicProxy is a library for generating lightweight .NET proxies on the fly at runtime."
 package.forum = "http://groups.google.com/group/castle-project-users"

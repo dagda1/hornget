@@ -11,7 +11,11 @@ install castle.core:
 dependencies:
     dependency "castle.dynamicproxy" >> "Castle.DynamicProxy2"
     dependency "castle.dynamicproxy" >> "Castle.Core"
-    
+
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+        
 package.category = "IoC"
 package.description = ""
 package.forum = "http://groups.google.com/group/castle-project-users"

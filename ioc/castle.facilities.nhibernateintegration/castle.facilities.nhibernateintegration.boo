@@ -19,6 +19,10 @@ dependencies:
     dependency "nhibernate"				>> "2.1"					>> "Iesi.Collections"
     dependency "nhibernate"				>> "2.1"					>> "NHibernate.ByteCode.Castle"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "The NHibernate Facility enables the usage of NHibernate O/R framework for your components."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

@@ -10,8 +10,12 @@ install castle.windsor:
     
 dependencies:
     dependency "castle.dynamicproxy" >> "Castle.DynamicProxy2"
-    dependency "castle.dynamicproxy" >> "Castle.Core"
+    dependency "castle.core"         >> "Castle.Core"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "Windsor is an inversion of control container that aggregates the MicroKernel offering a friendly fool-proof interface and options to external configurations."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

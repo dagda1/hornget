@@ -16,6 +16,10 @@ dependencies:
     dependency "castle.services.transaction"						>> "castle.services.transaction"
     dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+
 package.category = "IoC"
 package.description = "The Batch Registration Facility registers components based on configuration instructions."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

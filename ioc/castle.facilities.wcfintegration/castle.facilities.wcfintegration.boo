@@ -14,6 +14,10 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = "Facilities augment the MicroKernel capabilities by integrating it with a different project or technology, or by implementing new semantics."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"

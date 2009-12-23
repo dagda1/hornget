@@ -8,6 +8,10 @@ install castle.nvelocity:
     shared_library "lib"
     build_root_dir "build"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "ViewEngines"
 package.description = "NVelocity is a port of the excellent Apache Jakarta Velocity project. It is a very simple, easy to learn and extensible template engine."
 package.forum = "http://groups.google.com/group/castle-project-users"

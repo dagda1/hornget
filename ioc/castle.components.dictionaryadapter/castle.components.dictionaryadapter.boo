@@ -8,6 +8,10 @@ install castle.core:
     shared_library "lib"
     build_root_dir "build"
 
+exclude:
+    library "Rhino.Mocks"
+    library "nunit.framework"
+    
 package.category = "IoC"
 package.description = ""
 package.forum = "http://groups.google.com/group/castle-project-users"

@@ -8,7 +8,7 @@ build_root_dir "build"
 shared_library "SharedLibs"
     
 dependencies:
-    depend "castle.dynamicproxy" >> "Castle.Core"
+    depend "castle.core"         >> "Castle.Core"
     depend "castle.dynamicproxy" >> "Castle.DynamicProxy2"  
 
 package.category = "Mocks"
