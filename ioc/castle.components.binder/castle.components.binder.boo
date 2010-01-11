@@ -9,8 +9,8 @@ install castle.core:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.components.validator" >> "Castle.Core"
-    dependency "castle.components.validator" >> "Castle.Components.Validator"
+    dependency "castle.core"             		>> "Castle.Core"
+    dependency "castle.components.validator" 	>> "Castle.Components.Validator"
 
 exclude:
     library "Rhino.Mocks"

@@ -9,7 +9,7 @@ install castle.facilities.nhibernateintegration:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.windsor"										>> "Castle.Core"
+    dependency "castle.core"             							>> "Castle.Core"
     dependency "castle.windsor"										>> "Castle.DynamicProxy2"
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"

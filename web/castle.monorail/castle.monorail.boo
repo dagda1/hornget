@@ -9,11 +9,11 @@ install castle.monorail:
     build_root_dir "build"
     
 dependencies:
+    dependency "castle.core"             				>> "Castle.Core"
     dependency "castle.activerecord"                    >> "Castle.ActiveRecord"
     dependency "castle.activerecord"                    >> "NHibernate"
     dependency "castle.activerecord"                    >> "Iesi.Collections"
     dependency "castle.activerecord"                    >> "NHibernate.ByteCode.Castle"
-    dependency "castle.activerecord"                    >> "Castle.Core"
     dependency "castle.activerecord"                    >> "log4net"
     dependency "castle.windsor"                         >> "Castle.Windsor"
     dependency "castle.windsor"                         >> "Castle.MicroKernel"
@@ -25,7 +25,6 @@ dependencies:
     dependency "castle.components.dictionaryadapter"    >> "Castle.Components.DictionaryAdapter"
     dependency "castle.components.pagination"           >> "Castle.Components.Pagination"
     dependency "castle.components.validator"            >> "Castle.Components.Validator"
-    dependency "castle.components.emailsender" >> "1.1" >> "Castle.Components.Common.EmailSender"
     
 
 package.category = "IoC"

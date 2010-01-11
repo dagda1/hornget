@@ -9,7 +9,7 @@ install castle.dynamicproxy:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.core" >> "1.1" >> "Castle.Core"
+    dependency "castle.core"             >> "Castle.Core"
 
 exclude:
     library "Rhino.Mocks"

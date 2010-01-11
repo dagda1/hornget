@@ -7,6 +7,9 @@ install castle.core:
 
     shared_library "lib"
     build_root_dir "build"
+	
+dependencies:
+    dependency "castle.core"             >> "Castle.Core"	
 
 exclude:
     library "Rhino.Mocks"

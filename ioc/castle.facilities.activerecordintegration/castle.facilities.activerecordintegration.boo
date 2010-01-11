@@ -10,7 +10,7 @@ install castle.facilities.activerecordintegration:
 
 dependencies:
     dependency "castle.core"   										>> "Castle.Core"
-    dependency "castle.dynamicproxy"							>> "Castle.DynamicProxy2"
+    dependency "castle.dynamicproxy"								>> "Castle.DynamicProxy2"
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
     dependency "castle.services.transaction"						>> "castle.services.transaction"

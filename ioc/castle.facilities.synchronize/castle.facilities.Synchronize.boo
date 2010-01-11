@@ -9,8 +9,8 @@ install castle.facilities.synchronize:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.core"										>> "Castle.Core"
-    dependency "castle.dynamicproxy"						>> "Castle.DynamicProxy2"
+    dependency "castle.core"             						>> "Castle.Core"
+    dependency "castle.dynamicproxy"							>> "Castle.DynamicProxy2"
     dependency "castle.windsor"									>> "Castle.MicroKernel"
     dependency "castle.windsor"									>> "Castle.Windsor"
 

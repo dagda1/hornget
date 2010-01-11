@@ -15,7 +15,6 @@ dependencies:
     dependency "castle.dynamicproxy"								>> "Castle.DynamicProxy2"
     dependency "castle.activerecord"								>> "Castle.ActiveRecord"
     dependency "castle.components.binder"							>> "Castle.Components.Binder"
-    dependency "castle.components.emailsender"						>> "Castle.Components.Common.EmailSender"
     dependency "castle.templateengine"								>> "Castle.Components.Common.TemplateEngine.NVelocityTemplateEngine"
     dependency "castle.templateengine"								>> "Castle.Components.Common.TemplateEngine"
     dependency "castle.components.dictionaryadapter"				>> "Castle.Components.DictionaryAdapter"

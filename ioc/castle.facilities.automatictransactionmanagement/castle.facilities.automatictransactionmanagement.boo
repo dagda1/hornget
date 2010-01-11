@@ -9,11 +9,11 @@ install castle.automatictransactionmanagement:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.core" >> "Castle.Core"
-    dependency "castle.dynamicproxy" >> "Castle.DynamicProxy2"
-    dependency "castle.services.transaction" >> "Castle.Services.Transaction"
-    dependency "castle.windsor" >> "Castle.MicroKernel"
-    dependency "castle.windsor" >> "Castle.Windsor"
+    dependency "castle.core"             		>> "Castle.Core"
+    dependency "castle.dynamicproxy" 			>> "Castle.DynamicProxy2"
+    dependency "castle.services.transaction" 	>> "Castle.Services.Transaction"
+    dependency "castle.windsor" 				>> "Castle.MicroKernel"
+    dependency "castle.windsor" 				>> "Castle.Windsor"
 
 exclude:
     library "Rhino.Mocks"
