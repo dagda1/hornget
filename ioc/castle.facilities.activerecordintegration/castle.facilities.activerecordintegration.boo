@@ -14,6 +14,7 @@ dependencies:
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
     dependency "castle.services.transaction"						>> "castle.services.transaction"
+    dependency "castle.components.validator"						>> "Castle.Components.Validator"
     dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
     dependency "nhibernate"				>> "2.1"					>> "Nhibernate"
     dependency "nhibernate"				>> "2.1"					>> "Iesi.Collections"
