@@ -8,8 +8,6 @@ install magnum:
 
 package.category = "Frameworks"
 package.description = "For the larger than average developer"
-package.forum = "http://groups.google.com/group/masstransit"
-package.homepage = "http://code.google.com/p/masstransit/"
+package.homepage = "http://code.google.com/p/magnum/"
 package.name = "Magnum"
 package.notes = ""
-package.version = "1.0.0.0"
