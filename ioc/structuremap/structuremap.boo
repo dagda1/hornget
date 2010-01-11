@@ -6,7 +6,7 @@ install structuremap:
     build_root_dir "build"   
 
 	with:
-		tasks all
+		tasks release
 		
 package.category = "ioc"
 package.description = "StructureMap is a Dependency Injection / Inversion of Control tool for .Net"
