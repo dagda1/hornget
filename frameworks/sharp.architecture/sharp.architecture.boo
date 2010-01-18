@@ -8,12 +8,12 @@ install sharp.architecture:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.dynamicproxy"                  >> "Castle.Core"
-    depend "castle.dynamicproxy"                  >> "Castle.DynamicProxy2"
-    depend "castle.windsor"                >> "Castle.MicroKernel"
-    depend "castle.windsor"                >> "Castle.Windsor"
-    depend "castle.services.logging"               >> "Castle.Services.Logging.Log4netIntegration"
-    depend "castle.components.validator"             >> "Castle.Components.Validator"
+    depend "castle.dynamicproxy"						>> "Castle.Core"
+    depend "castle.dynamicproxy"						>> "Castle.DynamicProxy2"
+    depend "castle.windsor"								>> "Castle.MicroKernel"
+    depend "castle.windsor"								>> "Castle.Windsor"
+    depend "castle.core"								>> "Castle.Services.Logging.Log4netIntegration"
+    depend "castle.components.validator"				>> "Castle.Components.Validator"
     depend "fluentnhibernate"              >> "FluentNHibernate"
     depend "nhibernate"           >> "2.1" >> "NHibernate"     
     depend "nhibernate"           >> "2.1" >> "NHibernate.ByteCode.Castle"
