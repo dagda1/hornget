@@ -9,10 +9,10 @@ install castle.facilities.wcfintegration:
     build_root_dir "build"
 
 dependencies:
-    dependency "castle.core"             							>> "Castle.Core"
-    dependency "castle.windsor"										>> "Castle.DynamicProxy2"
-    dependency "castle.windsor"										>> "Castle.MicroKernel"
-    dependency "castle.windsor"										>> "Castle.Windsor"
+    dependency "castle.core"                      >> "Castle.Core"
+    dependency "castle.windsor"         >> 2.1    >> "Castle.DynamicProxy2"
+    dependency "castle.windsor"         >> 2.1    >> "Castle.MicroKernel"
+    dependency "castle.windsor"         >> 2.1    >> "Castle.Windsor"
 
 exclude:
     library "Rhino.Mocks"
