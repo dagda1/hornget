@@ -13,9 +13,10 @@ install nhibernate.search:
 dependencies:
     depend "castle.core"                   	>> "Castle.Core"
     depend "castle.dynamicproxy"          	>> "Castle.DynamicProxy2"
-    depend "nhibernate"   			>> "2.1" >> "NHibernate"
-    depend "nhibernate"   		>> "2.1" >> "Iesi.Collections"
-    depend "nhibernate"   		>> "2.1" >> "NHibernate.ByteCode.Castle"
+    depend "nhibernate"   			>> "NHibernate"
+    depend "nhibernate"   		>> "Iesi.Collections"
+    depend "nhibernate"   		>> "NHibernate.ByteCode.Castle"
+    depend "nhibernate"   		>> "Remotion.Data.Linq"
 
 package.category = "ORM"
 package.description = "NHibernate search."

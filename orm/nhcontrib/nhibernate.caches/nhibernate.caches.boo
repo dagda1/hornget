@@ -9,10 +9,11 @@ install nhcontrib.caches:
     build_root_dir "build"
 
 dependencies:
-    depend "nhibernate" >> "2.1" >> "NHibernate"
-    depend "nhibernate" >> "2.1" >> "NHibernate.ByteCode.Castle"
-    depend "nhibernate" >> "2.1" >> "NHibernate.ByteCode.LinFu"
-    depend "nhibernate" >> "2.1" >> "Iesi.Collections"
+    depend "nhibernate" >> "NHibernate"
+    depend "nhibernate" >> "NHibernate.ByteCode.Castle"
+    depend "nhibernate" >> "NHibernate.ByteCode.LinFu"
+    depend "nhibernate" >> "Iesi.Collections"
+    depend "nhibernate" >> "Remotion.Data.Linq"
 
 package.category = "ORM"
 package.description = "NHibernate Caches contains several Cache Provider's for NHibernate's Cache mechanism."
