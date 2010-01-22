@@ -9,10 +9,10 @@ dependencies:
     depend "castle.core"	        >> "Castle.Core"
     depend "castle.dynamicproxy"	>> "Castle.DynamicProxy2"
     depend "castle.dynamicproxy"	>> "Castle.DynamicProxy"
-    depend "nhibernate.caches"		>> "NHibernate.Caches.SysCache"
-    depend "nhibernate"				>> "NHibernate"
-    depend "nhibernate"				>> "NHibernate.ByteCode.Castle"
-    depend "nhibernate"				>> "Iesi.Collections"
+    depend "nhibernate.caches"		>> "2.1" >> "NHibernate.Caches.SysCache"
+    depend "nhibernate"				>> "2.1" >> "NHibernate"
+    depend "nhibernate"				>> "2.1" >> "NHibernate.ByteCode.Castle"
+    depend "nhibernate"				>> "2.1" >> "Iesi.Collections"
 	
 exclude:
     library "Rhino.Mocks"
