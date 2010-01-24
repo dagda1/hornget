@@ -1,6 +1,6 @@
 ﻿install rhino.commons:
-    get_from git("git://github.com/lorenzomelato/rhino-commons.git")
-    #get_from git("git://github.com/dagda1/rhino-commons.git")
+    #get_from git("git://github.com/lorenzomelato/rhino-commons.git")
+    get_from git("git://github.com/dagda1/rhino-commons.git")
     build_with psake, buildfile("default.ps1"), FrameworkVersion35    
 	with:
 		tasks Compile    
