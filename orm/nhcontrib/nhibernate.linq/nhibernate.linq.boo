@@ -19,6 +19,7 @@ dependencies:
     depend "nhibernate"   		  >> "NHibernate"
     depend "nhibernate"                   >> "Iesi.Collections"
     depend "nhibernate"                   >> "NHibernate.ByteCode.Castle"
+    depend "nhibernate"                   >> "Remotion.Data.Linq"
 
 package.category = "ORM"
 package.description = "NHibernate Linq - Linq provider for NHibernate."
