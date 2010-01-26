@@ -1,12 +1,6 @@
 install caliburn:
-    get_from svn("https://caliburn.svn.codeplex.com/svn")
-    build_with nant, buildfile("default.build"), FrameworkVersion35	
-
-    switches:
-        parameters "skip.tests=true"
-
-    with:
-        tasks clean,release,platformNet35
+    get_from svn("https://caliburn.svn.codeplex.com/svn/trunk")
+    build_with batch, buildfile("build-release.cmd"), FrameworkVersion35	
 
     shared_library "lib/net-3.5"
     build_root_dir "bin/net-3.5/release"
