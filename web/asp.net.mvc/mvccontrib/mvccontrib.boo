@@ -24,6 +24,7 @@ dependencies:
     dependency "castle.components.validator"						>> "Castle.Components.Validator"
     dependency "castle.facilities.activerecordintegration"			>> "Castle.Facilities.ActiveRecordIntegration"
     dependency "castle.facilities.automatictransactionmanagement"   >> "Castle.Facilities.AutomaticTransactionManagement"
+    dependency "castle.services.transaction"                        >> "Castle.Services.Transaction"
     dependency "castle.windsor"										>> "Castle.Facilities.Logging"
     dependency "castle.facilities.nhibernateintegration"			>> "Castle.Facilities.NHibernateIntegration"
     dependency "castle.facilities.wcfintegration"					>> "Castle.Facilities.Synchronize"
