@@ -1,5 +1,5 @@
 install nservicebus:
-    get_from svn("https://nservicebus.svn.sourceforge.net/svnroot/nservicebus/trunk/")
+    get_from svn("https://nservicebus.svn.sourceforge.net/svnroot/nservicebus/branches/v2.0/")
     build_with batch, buildfile("build.bat"), FrameworkVersion35	
 
     shared_library "external-bin"
