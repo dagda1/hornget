@@ -8,6 +8,18 @@ install castle.dynamicproxy:
     shared_library "lib"
     build_root_dir "build"
 
+    mode debug:
+        switches:
+            parameters "project.config=debug", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
+
+    mode release:
+         switches:
+            parameters "project.config=release", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
+                        
+    mode aptca:
+         switches:
+            parameters "project.config=aptca", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
+
 dependencies:
     dependency "castle.core"             >> "Castle.Core"
 
