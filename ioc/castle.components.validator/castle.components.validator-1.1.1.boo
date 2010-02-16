@@ -1,5 +1,5 @@
-install castle.dynamicproxy:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/DynamicProxy/trunk", 6379)
+install castle.core:
+    get_from svn("https://svn.castleproject.org/svn/castle/Components/Validator/tags/1.1.1/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
@@ -7,7 +7,7 @@ install castle.dynamicproxy:
 
     shared_library "lib"
     build_root_dir "build"
-
+    
     mode debug:
         switches:
             parameters "project.config=debug", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
@@ -21,15 +21,16 @@ install castle.dynamicproxy:
             parameters "project.config=aptca", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
 dependencies:
-    dependency "castle.core"             >> "1.1" >> "Castle.Core"
+    dependency "castle.core"             	>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy" 		>> "2.2" >> "Castle.DynamicProxy2"
 
 exclude:
     library "Rhino.Mocks"
     library "nunit.framework"
-    
+        
 package.category = "IoC"
-package.description = "Castle DynamicProxy is a library for generating lightweight .NET proxies on the fly at runtime."
+package.description = ""
 package.forum = "http://groups.google.com/group/castle-project-users"
 package.homepage = "http://www.castleproject.org/"
-package.name = "Castle.DynamicProxy"
+package.name = "Castle.Components.Binder"
 package.notes = ""

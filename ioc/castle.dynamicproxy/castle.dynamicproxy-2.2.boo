@@ -1,5 +1,5 @@
 install castle.dynamicproxy:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/DynamicProxy/trunk", 6379)
+    get_from svn("http://svn.castleproject.org:8080/svn/castle/DynamicProxy/tags/2.2.0/")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
@@ -21,7 +21,7 @@ install castle.dynamicproxy:
             parameters "project.config=aptca", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
 dependencies:
-    dependency "castle.core"             >> "1.1" >> "Castle.Core"
+    dependency "castle.core"             >> "1.2">> "Castle.Core"
 
 exclude:
     library "Rhino.Mocks"
