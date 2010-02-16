@@ -11,6 +11,10 @@ install nhibernate:
     shared_library "lib/net/3.5"
     build_root_dir "build"
 
+    mode aptca:
+         switches:
+            parameters "assembly.allow-partially-trusted-callers=true", "project.config=release", "sign=true","with.examples=false"
+
 dependencies:
     depend "castle.core"         >> "Castle.Core"
     depend "castle.dynamicproxy" >> "Castle.DynamicProxy2"

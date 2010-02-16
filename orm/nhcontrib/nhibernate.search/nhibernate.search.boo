@@ -10,6 +10,10 @@ install nhibernate.search:
     shared_library "lib"
     build_root_dir "build"
 
+    mode aptca:
+         switches:
+            parameters "assembly.allow-partially-trusted-callers=true", "with.examples=false"
+
 dependencies:
     depend "castle.core"                   	>> "Castle.Core"
     depend "castle.dynamicproxy"          	>> "Castle.DynamicProxy2"

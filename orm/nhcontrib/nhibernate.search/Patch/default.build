@@ -11,11 +11,12 @@
 	<property name="folders.lib" value="lib" />
 	<property name="folders.build" value="build" />
 
+	<property overwrite="false" name="assembly.allow-partially-trusted-callers" value="false" />
 	
 	<target name="clean" description="aasd">
 		<delete dir="${folders.build}" failonerror="false"/>
 	</target>
-	<target name="build" depends="clean">
+	<target name="build" depends="clean,generate-assemblyinfo">
 		<mkdir dir="${folders.build}"/>
 
 		<csc target="library"
@@ -98,4 +99,15 @@
 		</nunit2>
 	</target>
 
+	<target name="generate-assemblyinfo">
+		<asminfo output="src/NHibernate.Search/APTCA.cs" language="CSharp">
+			<imports>
+				<import namespace="System.Security" if="${assembly.allow-partially-trusted-callers}" />
+			</imports>
+			<attributes>
+				<!-- For some reason, NAnt doesn't detect that APTCA has a public no-argument constructor -->
+				<attribute asis="true" type="AllowPartiallyTrustedCallersAttribute" if="${assembly.allow-partially-trusted-callers}" />
+			</attributes>
+		</asminfo>
+	</target>
 </project>
