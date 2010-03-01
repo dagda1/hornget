@@ -1,13 +1,21 @@
 install castle.facilities.wcfintegration:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/Wcf/trunk/")
-    build_with nant, buildfile("default.build"), FrameworkVersion35
+    get_from git("git://github.com/castleproject/Castle.Facilities.Wcf.git")
+    build_with msbuild, buildfile("buildscripts/Build.proj"), FrameworkVersion35
 
     switches:
-        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false", "build.warnaserrors=false"
+        parameters "/p:TestRunner_Enabled=false"
 
     shared_library "lib"
     build_root_dir "build"
 
+    mode debug:
+        switches:
+            parameters "/p:Configuration=Debug", "/p:TestRunner_Enabled=false"
+
+    mode release:
+         switches:
+            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false"
+                        
 dependencies:
     dependency "castle.core"                      >> "Castle.Core"
     dependency "castle.windsor"         >> 2.1    >> "Castle.DynamicProxy2"
@@ -19,7 +27,7 @@ exclude:
     library "nunit.framework"
     
 package.category = "IoC"
-package.description = "Facilities augment the MicroKernel capabilities by integrating it with a different project or technology, or by implementing new semantics."
+package.description = "The WCF Facility allows for the use of the Windsor container for WCF Services."
 package.forum = "http://groups.google.co.uk/group/castle-project-users?hl=en"
 package.homepage = "http://www.castleproject.org/container/facilities/trunk/wcf/index.html"
 package.name = "Castle Facilities Wcf Integration"

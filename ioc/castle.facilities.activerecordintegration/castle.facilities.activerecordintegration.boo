@@ -1,12 +1,24 @@
-install castle.facilities.activerecordintegration:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/Facilities/ActiveRecordIntegration/trunk/")
-    build_with nant, buildfile("default.build"), FrameworkVersion35
+install castle.dynamicproxy:
+    get_from git("git://github.com/castleproject/Castle.Facilities.ActiveRecordIntegration.git")
+    build_with msbuild, buildfile("buildscripts/Build.proj"), FrameworkVersion35
 
     switches:
-        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false", "build.warnaserrors=false"
+        parameters "/p:TestRunner_Enabled=false"
 
     shared_library "lib"
     build_root_dir "build"
+
+    mode debug:
+        switches:
+            parameters "/p:Configuration=Debug", "/p:TestRunner_Enabled=false"
+
+    mode release:
+         switches:
+            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false"
+                        
+    mode aptca:
+         switches:
+            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
 
 dependencies:
     dependency "castle.core"   										>> "Castle.Core"
