@@ -30,6 +30,6 @@ exclude:
 package.category = "IoC"
 package.description = "Castle DynamicProxy is a library for generating lightweight .NET proxies on the fly at runtime."
 package.forum = "http://groups.google.com/group/castle-project-users"
-package.homepage = "http://www.castleproject.org/"
+package.homepage = "http://www.castleproject.org/dynamicproxy/"
 package.name = "Castle.DynamicProxy"
 package.notes = ""
