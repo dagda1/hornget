@@ -1,12 +1,24 @@
 install castle.templateengine:
     get_from git("git://github.com/castleproject/Castle.Components.TemplateEngine.git")
-    build_with nant, buildfile("default.build"), FrameworkVersion35	
+    build_with msbuild, buildfile("buildscripts/Build.proj"), FrameworkVersion35
 
     switches:
-        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
+        parameters "/p:TestRunner_Enabled=false"
 
     shared_library "lib"
     build_root_dir "build"
+
+    mode debug:
+        switches:
+            parameters "/p:Configuration=Debug", "/p:TestRunner_Enabled=false"
+
+    mode release:
+         switches:
+            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false"
+                        
+    mode aptca:
+         switches:
+            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
 
 dependencies:
     depend "castle.nvelocity" >> "NVelocity"
