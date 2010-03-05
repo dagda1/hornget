@@ -21,10 +21,10 @@ install castle.facilities.nhibernateintegration:
             parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
 
 dependencies:
-    dependency "castle.core"             							>> "Castle.Core"
-    dependency "castle.windsor"										>> "Castle.DynamicProxy2"
-    dependency "castle.windsor"										>> "Castle.MicroKernel"
-    dependency "castle.windsor"										>> "Castle.Windsor"
+    dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
+    dependency "castle.windsor"					>> "2.1" >> "Castle.MicroKernel"
+    dependency "castle.windsor"					>> "2.1" >> "Castle.Windsor"
     dependency "castle.services.transaction"						>> "castle.services.transaction"
     dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
     dependency "nhibernate"				>> "2.1"					>> "Nhibernate"
