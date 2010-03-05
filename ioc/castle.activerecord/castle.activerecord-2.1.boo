@@ -23,7 +23,7 @@ install castle.activerecord:
 dependencies:
     dependency "castle.core"					>> "1.2" >> "Castle.Core"
     dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
-    dependency "castle.components.validator"    >> "1.1.1" >> "Castle.Components.Validator"
+    dependency "castle.components.validator"    >> "1.1" >> "Castle.Components.Validator"
     dependency "nhibernate"			>> "2.1"	>> "NHibernate"
     dependency "nhibernate"			>> "2.1"	>> "Antlr3.Runtime"
     dependency "nhibernate"			>> "2.1"	>> "Iesi.Collections"
