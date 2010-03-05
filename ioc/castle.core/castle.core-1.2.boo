@@ -1,5 +1,5 @@
 install castle.core:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/Core/tags/1.2.0/")
+    get_from git("git://github.com/castleproject/Castle.Core.git", "1-2-stable")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
