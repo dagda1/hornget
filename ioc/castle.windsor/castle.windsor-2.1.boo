@@ -1,5 +1,5 @@
 install castle.windsor:
-    get_from svn("http://svn.castleproject.org:8080/svn/castle/InversionOfControl/tags/2.1.1/")
+    get_from git("git://github.com/castleproject/Castle.InversionOfControl.git", "2-1-stable")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
@@ -21,8 +21,8 @@ install castle.windsor:
             parameters "project.config=aptca", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
 dependencies:
-    dependency "castle.dynamicproxy" >> "Castle.DynamicProxy2"
-    dependency "castle.core"         >> "Castle.Core"
+    dependency "castle.dynamicproxy" >> "2.2" >> "Castle.DynamicProxy2"
+    dependency "castle.core"         >> "1.2" >> "Castle.Core"
 
 exclude:
     library "Rhino.Mocks"
