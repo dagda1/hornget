@@ -1,12 +1,12 @@
 install castle.core:
     get_from git("git://github.com/castleproject/Castle.Core.git", "1-2-stable")
-    build_with batch, buildfile("ClickToBuild.cmd"), FrameworkVersion35
+    build_with batch, buildfile("build.cmd"), FrameworkVersion35
 
     switches:
         parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
     shared_library "lib"
-    build_root_dir "build"
+    build_root_dir "src/Castle.Core/bin/Release"
 
     mode debug:
         switches:
