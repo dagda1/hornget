@@ -1,6 +1,6 @@
 install castle.core:
     get_from git("git://github.com/castleproject/Castle.Core.git", "1-2-stable")
-    build_with nant, buildfile("default.build"), FrameworkVersion35
+    build_with batch, buildfile("ClickToBuild.cmd"), FrameworkVersion35
 
     switches:
         parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
