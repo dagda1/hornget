@@ -6,7 +6,7 @@ install castle.core:
         parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
     shared_library "lib"
-    build_root_dir "src/Castle.Core/bin/Release"
+    build_root_dir "build"
 
     mode debug:
         switches:
