@@ -21,7 +21,7 @@ install castle.core:
             parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
     
 dependencies:
-	dependency "castle.core"             				>> "1.2" >> "Castle.Core"
+    dependency "castle.core"             				>> "1.2" >> "Castle.Core"
     dependency "castle.activerecord"					>> "2.1" >> "Castle.ActiveRecord"	
     dependency "nhibernate"								>> "2.1" >> "NHibernate"
     dependency "nhibernate"								>> "2.1" >> "Iesi.Collections"
@@ -36,7 +36,7 @@ dependencies:
     dependency "castle.templateengine"                  >> "Castle.Components.Common.TemplateEngine"
     dependency "castle.components.dictionaryadapter"    >> "Castle.Components.DictionaryAdapter"
     dependency "castle.components.pagination"           >> "Castle.Components.Pagination"
-	dependency "castle.components.validator"			>> "1.1" >> "Castle.Components.Validator"
+    dependency "castle.components.validator"			>> "1.1" >> "Castle.Components.Validator"
     
 
 package.category = "IoC"

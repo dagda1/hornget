@@ -15,7 +15,7 @@ dependencies:
     dependency "nhibernate"						>> "2.1"	>> "NHibernate.ByteCode.Castle"
     dependency "nhibernate"						>> "2.1"	>> "Iesi.Collections"
     dependency "nhibernate.linq"				>> "2.1"	>> "NHibernate.Linq"
-	dependency "structuremap"					>> "2.5.4"	>> "StructureMap"
+    dependency "structuremap"					>> "2.5.4"	>> "StructureMap"
 
 package.category = "ESB"
 package.description = "MassTransit is lean service bus implementation for building loosely coupled applications using the .NET framework"

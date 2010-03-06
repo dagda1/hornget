@@ -18,8 +18,8 @@ install nhibernate.linq:
             parameters "assembly.allow-partially-trusted-callers=true", "project.config=release", "sign=true","skip.tests=true"
 
 dependencies:
-	dependency "castle.core"				>> "1.2"	>> "Castle.Core"
-    dependency "castle.dynamicproxy"		>> "2.2"	>> "Castle.DynamicProxy2"
+    dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
     dependency "nhibernate"   							>> "NHibernate"
     dependency "nhibernate"								>> "Iesi.Collections"
     dependency "nhibernate"								>> "NHibernate.ByteCode.Castle"
