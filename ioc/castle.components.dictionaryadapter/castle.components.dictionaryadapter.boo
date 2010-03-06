@@ -20,9 +20,6 @@ install castle.core:
          switches:
             parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
 	
-dependencies:
-    dependency "castle.core"             >> "Castle.Core"	
-
 exclude:
     library "Rhino.Mocks"
     library "nunit.framework"
