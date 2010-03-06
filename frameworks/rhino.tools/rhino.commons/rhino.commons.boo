@@ -9,8 +9,8 @@ build_root_dir "build"
 shared_library "SharedLibs"
 
 dependencies:
-	dependency "castle.core"             			>> "1.2"		>> "Castle.Core"
-	dependency "castle.dynamicproxy"				>> "2.2"		>> "Castle.DynamicProxy2"
+    dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
 	dependency "castle.windsor"						>> "2.1"		>> "Castle.MicroKernel"
 	dependency "castle.windsor"						>> "2.1"		>> "Castle.Windsor"
 	dependency "castle.services.transaction"						>> "Castle.Services.Transaction"
