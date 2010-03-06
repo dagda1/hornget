@@ -12,12 +12,12 @@ install nhibernate.burrow:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.core" 	        >> "Castle.Core"
-    depend "castle.dynamicproxy" 	>> "Castle.DynamicProxy2"
-    depend "nhibernate"   		>> "NHibernate"
-    depend "nhibernate"   		>> "Iesi.Collections"
-    depend "nhibernate"   		>> "NHibernate.ByteCode.Castle"
-    depend @log4net       >> "1.2.10" >> "log4net"
+	dependency "castle.core"            >> "1.2"	>> "Castle.Core"
+    dependency "castle.dynamicproxy"	>> "2.2"	>> "Castle.DynamicProxy2"
+    dependency "nhibernate"   						>>	"NHibernate"
+    dependency "nhibernate"   						>> "Iesi.Collections"
+    dependency "nhibernate"   						>> "NHibernate.ByteCode.Castle"
+    dependency @log4net					>> "1.2.10" >> "log4net"
 
 package.category = "ORM"
 package.description = "NHibernate.Burrow is a light weight middleware developed to support .Net applications using NHibernate"

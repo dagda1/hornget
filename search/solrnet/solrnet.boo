@@ -6,13 +6,13 @@ install solrnet:
 	shared_library "lib"
 	
 dependencies:
-	depend "castle.windsor"		 >> "Castle.Core"
-	depend "castle.windsor"		 >> "Castle.MicroKernel"
-	depend "castle.windsor"		 >> "Castle.Windsor"
-	depend "castle.windsor"		 >> "Castle.DynamicProxy2"
-	depend "nhibernate" 	>> "2.1" >> "NHibernate"
-	depend "nhibernate" 	>> "2.1" >> "log4net"
-	depend "ninject"    	>> "2.0" >> "ninject"
+	dependency "castle.core"         >> "1.2" >> "Castle.Core"
+    dependency "castle.windsor"		 >> "2.1" >> "Castle.MicroKernel"
+    dependency "castle.windsor"		 >> "2.1" >> "Castle.Windsor"
+    dependency "castle.dynamicproxy" >> "2.2" >> "Castle.DynamicProxy2"
+	dependency "nhibernate" 		 >> "2.1" >> "NHibernate"
+	dependency "nhibernate" 		 >> "2.1" >> "log4net"
+	dependency "ninject"    		 >> "2.0" >> "ninject"
 	
 package.category = "search"
 package.description = "A Solr client for .Net"
