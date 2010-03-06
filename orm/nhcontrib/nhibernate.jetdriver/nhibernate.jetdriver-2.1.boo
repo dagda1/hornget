@@ -9,12 +9,12 @@ install nhibernate.jetdriver:
     build_root_dir "build"
 
 dependencies:
-    depend "castle.dynamicproxy"          >> "Castle.Core"
-    depend "castle.dynamicproxy"          >> "Castle.DynamicProxy2"
-    depend "nhibernate"   		>> "2.1" >> "NHibernate"
-    depend "nhibernate"   		>> "2.1" >> "Iesi.Collections"
-    depend "nhibernate"   		>> "2.1" >> "NHibernate.ByteCode.Castle"
-    depend @log4net       		>> "1.2.10" >> "log4net"
+	dependency "castle.core"				>> "1.2"	>> "Castle.Core"
+    dependency "castle.dynamicproxy"		>> "2.2"	>> "Castle.DynamicProxy2"
+    dependency "nhibernate"   				>> "2.1"	>> "NHibernate"
+    dependency "nhibernate"   				>> "2.1"	>> "Iesi.Collections"
+    dependency "nhibernate"   				>> "2.1"	>> "NHibernate.ByteCode.Castle"
+    dependency @log4net       				>> "1.2.10" >> "log4net"
 
 package.category = "ORM"
 package.description = "NHibernate JetDriver."

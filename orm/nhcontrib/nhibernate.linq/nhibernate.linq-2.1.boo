@@ -18,11 +18,11 @@ install nhibernate.linq:
             parameters "assembly.allow-partially-trusted-callers=true", "project.config=release", "sign=true","skip.tests=true"
 
 dependencies:
-    depend "castle.core"                  >> "Castle.Core"
-    depend "castle.dynamicproxy"          >> "Castle.DynamicProxy2"
-    depend "nhibernate"   >> "2.1" >> "NHibernate"
-    depend "nhibernate"   >> "2.1" >> "Iesi.Collections"
-    depend "nhibernate"   >> "2.1" >> "NHibernate.ByteCode.Castle"
+	dependency	"castle.core"				>> "1.2"	>> "Castle.Core"
+    dependency	"castle.dynamicproxy"		>> "2.2"	>> "Castle.DynamicProxy2"
+    dependency	"nhibernate"				>> "2.1"	>> "NHibernate"
+    dependency	"nhibernate"				>> "2.1"	>> "Iesi.Collections"
+    dependency	"nhibernate"				>> "2.1"	>> "NHibernate.ByteCode.Castle"
 
 package.category = "ORM"
 package.description = "NHibernate Linq - Linq provider for NHibernate."

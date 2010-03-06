@@ -21,8 +21,8 @@ install castle.core:
             parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
 
 dependencies:
-    dependency "castle.core"             		>> "Castle.Core"
-    dependency "castle.components.validator" 	>> "Castle.Components.Validator"
+	dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+	dependency "castle.components.validator"    >> "1.1" >> "Castle.Components.Validator"
 
 exclude:
     library "Rhino.Mocks"

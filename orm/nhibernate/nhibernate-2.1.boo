@@ -16,8 +16,8 @@ install nhibernate:
             parameters "assembly.allow-partially-trusted-callers=true", "project.config=release", "sign=true","with.examples=false"
 
 dependencies:
-    depend "castle.core" >> "Castle.Core"
-    depend "castle.dynamicproxy" >> "Castle.DynamicProxy2"
+	dependency "castle.core"				>> "1.2"	>> "Castle.Core"
+    dependency "castle.dynamicproxy"		>> "2.2"	>> "Castle.DynamicProxy2"
 
 package.category = "ORM"
 package.description = "NHibernate handles persisting plain .NET objects to and from an underlying relational database."

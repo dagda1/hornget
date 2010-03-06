@@ -5,11 +5,11 @@ install caliburn:
     shared_library "lib/net-3.5"
     build_root_dir "bin/net-3.5/release"
 
-dependencies:
-    depend "castle.windsor"   >> "Castle.Core"
-    depend "castle.windsor"   >> "Castle.DynamicProxy2"
-    depend "castle.windsor" >> "Castle.MicroKernel"
-    depend "castle.windsor" >> "Castle.Windsor"
+dependencies:  
+	dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
+    dependency "castle.windsor"					>> "2.1" >> "Castle.MicroKernel"
+    dependency "castle.windsor"					>> "2.1" >> "Castle.Windsor"
 
 package.category = "WPF"
 package.description = "Designed to aid in the development of WPF and Silverlight applications, Caliburn implements a variety of UI patterns for solving real-world problems. Patterns that are enabled by the framework include MVC, MVP, Presentation Model (MVVM), Commands and Application Controller."

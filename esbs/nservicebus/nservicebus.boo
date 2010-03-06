@@ -6,10 +6,10 @@ install nservicebus:
     build_root_dir "build/output"
     
 dependencies:
-    depend "castle.windsor"              >> "Castle.Core"
-    depend "castle.windsor"              >> "Castle.DynamicProxy2"
-    depend "castle.windsor"            	 >> "Castle.MicroKernel"
-    depend "castle.windsor"              >> "Castle.Windsor"
+    dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
+    dependency "castle.windsor"					>> "2.1" >> "Castle.MicroKernel"
+    dependency "castle.windsor"					>> "2.1" >> "Castle.Windsor"
     depend "nhibernate"       >> "NHibernate"
     depend "nhibernate"       >> "NHibernate.ByteCode.Castle"
     depend "nhibernate"       >> "NHibernate.ByteCode.LinFu"

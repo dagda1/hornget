@@ -8,12 +8,12 @@ build_root_dir "build"
 shared_library "SharedLibs"
 
 dependencies:
-	depend "castle.dynamicproxy"                 >> "Castle.Core"
-	depend "castle.dynamicproxy"                 >> "Castle.DynamicProxy"
-	depend "castle.dynamicproxy"                 >> "Castle.DynamicProxy2"
-	depend "nhibernate"							 >> "2.1" 	  >> "NHibernate"
-	depend "nhibernate"							 >> "2.1" 	  >> "NHibernate.ByteCode.Castle"
-	depend "nhibernate"							 >> "2.1" 	  >> "Iesi.Collections"
+	dependency "castle.core"            >> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"	>> "2.2" >> "Castle.DynamicProxy"	
+    dependency "castle.dynamicproxy"	>> "2.2" >> "Castle.DynamicProxy2"
+	depend "nhibernate"					>> "2.1" >> "NHibernate"
+	depend "nhibernate"					>> "2.1" >> "NHibernate.ByteCode.Castle"
+	depend "nhibernate"					>> "2.1" >> "Iesi.Collections"
 
 package.category = "Frameworks"
 package.description = "Security Infrastructure Library for NHibernate"
