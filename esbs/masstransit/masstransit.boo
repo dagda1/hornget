@@ -10,7 +10,7 @@ dependencies:
     dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"
     dependency "castle.windsor"					>> "2.1"	>> "Castle.MicroKernel"
     dependency "castle.windsor"					>> "2.1"	>> "Castle.Windsor"
-    dependency "fluentnhibernate"							>> "FluentNHibernate"
+    dependency "fluentnhibernate"				>> "2.1"	>> "FluentNHibernate"
     dependency "nhibernate"						>> "2.1"	>> "NHibernate"
     dependency "nhibernate"						>> "2.1"	>> "NHibernate.ByteCode.Castle"
     dependency "nhibernate"						>> "2.1"	>> "Iesi.Collections"
