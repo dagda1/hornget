@@ -10,10 +10,10 @@ install mvccontrib:
     build_root_dir "build"
 
 dependencies:  
-	dependency "castle.core"             							>> "1.2" >> "Castle.Core"
-    dependency "castle.dynamicproxy"								>> "2.2" >> "Castle.DynamicProxy2"	
-    dependency "castle.dynamicproxy"								>> "2.2" >> "Castle.DynamicProxy"	
-	dependency "castle.components.validator"						>> "1.1" >> "Castle.Components.Validator"
+    dependency "castle.core"             		>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy2"	
+    dependency "castle.dynamicproxy"			>> "2.2" >> "Castle.DynamicProxy"
+    dependency "castle.components.validator"						>> "1.1" >> "Castle.Components.Validator"
     dependency "castle.facilities.automatictransactionmanagement"   >> "Castle.Facilities.AutomaticTransactionManagement"
     dependency "castle.services.transaction"                        >> "Castle.Services.Transaction"
     dependency "castle.windsor"										>> "2.1" >> "Castle.MicroKernel"
