@@ -14,7 +14,7 @@ dependencies:
     dependency "castle.windsor"					>> "2.1" >> "Castle.Windsor"
     dependency "castle.core"					>> "1.2" >> "Castle.Services.Logging.Log4netIntegration"
     dependency "castle.components.validator"    >> "1.1" >> "Castle.Components.Validator"
-    dependency "fluentnhibernate"              >> "FluentNHibernate"
+    dependency "fluentnhibernate"				>> "2.1" >> "FluentNHibernate"
     dependency "nhibernate"           >> "2.1" >> "NHibernate"     
     dependency "nhibernate"           >> "2.1" >> "NHibernate.ByteCode.Castle"
     dependency "nhibernate"           >> "2.1" >> "Iesi.Collections"
