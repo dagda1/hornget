@@ -11,8 +11,8 @@ install mvccontrib:
 
 dependencies:  
 	dependency "castle.core"             							>> "1.2" >> "Castle.Core"
+    dependency "castle.dynamicproxy"								>> "2.2" >> "Castle.DynamicProxy2"	
     dependency "castle.dynamicproxy"								>> "2.2" >> "Castle.DynamicProxy"	
-    dependency "castle.dynamicproxy"								>> "2.2" >> "Castle.DynamicProxy2"
 	dependency "castle.components.validator"						>> "1.1" >> "Castle.Components.Validator"
     dependency "castle.facilities.automatictransactionmanagement"   >> "Castle.Facilities.AutomaticTransactionManagement"
     dependency "castle.services.transaction"                        >> "Castle.Services.Transaction"
