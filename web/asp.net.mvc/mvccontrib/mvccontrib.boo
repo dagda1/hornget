@@ -1,5 +1,5 @@
 install mvccontrib:
-    get_from git("git://github.com/mvccontrib/MvcContrib.git")
+    get_from hg("https://hg01.codeplex.com/MVCContrib")
     build_with nant, buildfile("nant.build"), FrameworkVersion35	
     with:
         tasks build
@@ -22,6 +22,6 @@ dependencies:
 package.category = "Web"
 package.description = "This project adds additional functionality on top of the ASP.NET MVC Framework."
 package.forum = "http://groups.google.co.uk/group/mvccontrib-discuss"
-package.homepage = "http://www.codeplex.com/MVCContrib.org"
+package.homepage = "http://MVCContrib.org"
 package.name = "MVCContrib"
 package.notes = ""
