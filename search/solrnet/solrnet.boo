@@ -1,6 +1,9 @@
 install solrnet:
-	get_from svn("http://solrnet.googlecode.com/svn/trunk/")
-	build_with batch, buildfile("build.bat"), FrameworkVersion35
+	get_from git("git://github.com/mausch/SolrNet.git")
+	build_with msbuild, buildfile("SolrNet.proj"), FrameworkVersion35
+	
+	with:
+		tasks Build
 	
 	build_root_dir "merged"
 	shared_library "lib"
