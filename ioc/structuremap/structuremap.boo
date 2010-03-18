@@ -1,5 +1,5 @@
 install structuremap:
-    get_from svn("https://structuremap.svn.sourceforge.net/svnroot/structuremap/trunk/")
+    get_from git("git://github.com/structuremap/structuremap.git")
     build_with nant, buildfile("cruise.build"), FrameworkVersion35
 		
     shared_library "bin"
