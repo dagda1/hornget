@@ -2,10 +2,7 @@
     get_from svn("http://moq.googlecode.com/svn/trunk/")
     build_with msbuild, buildfile("Moq.sln"), FrameworkVersion35
 
-    with:
-        tasks full
-
-    build_root_dir "."
+    build_root_dir "build"
     shared_library "Lib"
 
 package.category = "Mocks"
