@@ -1,24 +1,24 @@
 install castle.dynamicproxy:
     get_from git("git://github.com/castleproject/Castle.DynamicProxy.git", "2-2-stable")
-    build_with msbuild, buildfile("buildscripts/Build.proj"), FrameworkVersion35
+    build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
-        parameters "/p:TestRunner_Enabled=false"
+        parameters "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
     shared_library "lib"
     build_root_dir "build"
 
     mode debug:
         switches:
-            parameters "/p:Configuration=Debug", "/p:TestRunner_Enabled=false"
+            parameters "project.config=debug", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
     mode release:
          switches:
-            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false"
+            parameters "project.config=release", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
                         
     mode aptca:
          switches:
-            parameters "/p:Configuration=Release", "/p:TestRunner_Enabled=false", "/p:AllowPartiallyTrustedCallers=True"
+            parameters "project.config=aptca", "sign=true","common.testrunner.enabled=false", "common.silverlight=false"
 
 dependencies:
     dependency "castle.core"             >> "1.2" >> "Castle.Core"
