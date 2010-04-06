@@ -1,5 +1,5 @@
 ﻿install automapper:
-    get_from svn("http://automapperhome.googlecode.com/svn/trunk/")
+    get_from git("git://github.com/jbogard/AutoMapper.git")
     build_with nant, buildfile("AutoMapper.build"), FrameworkVersion35
 
     with:
