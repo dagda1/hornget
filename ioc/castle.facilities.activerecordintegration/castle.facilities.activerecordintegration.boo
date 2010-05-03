@@ -28,6 +28,7 @@ dependencies:
     dependency "castle.services.transaction"						>> "castle.services.transaction"
     dependency "castle.components.validator"					>> "1.1" >> "Castle.Components.Validator"
     dependency "castle.facilities.automatictransactionmanagement"	>> "Castle.Facilities.AutomaticTransactionManagement"
+    dependency "castle.activerecord"                >> "2.1" >> "castle.activerecord"
     dependency "nhibernate"				>> "2.1"					>> "Nhibernate"
     dependency "nhibernate"				>> "2.1"					>> "Iesi.Collections"
     dependency "nhibernate"				>> "2.1"					>> "NHibernate.ByteCode.Castle"
