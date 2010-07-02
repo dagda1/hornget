@@ -1,5 +1,5 @@
 install castle.nvelocity:
-    get_from git("git://github.com/castleproject/NVelocity.git")
+    get_from git("git://github.com/castleproject/NVelocity.git", "1-1-stable")
     build_with nant, buildfile("default.build"), FrameworkVersion35
 
     switches:
