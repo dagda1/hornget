@@ -3,7 +3,7 @@ install castle.core:
     build_with msbuild, buildfile("buildscripts/Build.proj"), FrameworkVersion35
 
     switches:
-        parameters "/p:TestRunner_Enabledd=false", "/p:BuildConfigKey=NET35"
+        parameters "/p:TestRunner_Enabled=false", "/p:BuildConfigKey=NET35"
 
     shared_library "lib"
     build_root_dir "build"
